@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>COVID-19 and Transportation</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   </head>
+   <style>
+      * { 
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans', sans-serif;
+      }
+      html{
+      height: 100%;
+      }
+      body {
+      background-color: #FAF9F6;
+      min-height: 100vh;
+      margin: 0 auto;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+      0% {
+      opacity: 0;
+      }
+      100% {
+      opacity: 1;
+      }
+      }
+      h1 {
+      font-family: 'Merriweather', serif;
+      font-weight: 800;
+      font-size: 40px;
+      margin-bottom: 30px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 800px;
+      }
+      h4{
+      text-align: center;
+      font-weight: 300;
+      font-size: 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      margin-bottom: 40px;
+      }
+      h2{
+      font-family: 'Barlow Condensed', serif;
+      font-size: 30px;
+      font-weight: 600;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 40px;
+      }
+      #subtitle {
+      text-align: center;
+      color: #5e5e5e;
+      width: 40%;
+      }
+      #intro{
+      }
+      p{
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 16px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      }
+      #subheadline{
+      color: #5e5e5e;
+      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 40px;
+      }
+      #container {
+      max-width: 1040px;
+      margin: 0 auto;
+      }
+      a { 
+      color: #369;
+      }
+      .axis path,
+      .axis line {
+         fill: none;
+         stroke: #000;
+         shape-rendering: crispEdges;
+      }
+
+      .browser text {
+         text-align; left;
+         width: 400px;
+      }
+      svg {
+         width: 100%;
+      } 
+      svg.area {
+         width: 1000px;
+      }
+      text {
+      font-size: 10px;
+      text-transform: uppercase;
+      }
+      .y-axis path.domain { 
+      display: none; 
+      }
+      .y-axis line {
+      stroke: #5e5e5e37;
+      stroke-dasharray: 2px;
+      }
+      .country { 
+      cursor: default; 
+      }
+      .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+      }
+      .highlight path {
+      stroke: steelblue;
+      opacity: 1;
+      }
+      .highlight text { 
+      fill: steelblue; 
+      }
+      div.red {
+      font-family: 'Barlow Condensed', sans-serif;
+      color: #003870;
+      margin: 0 auto;
+      margin-top: 0px;
+      font-size: 28px;
+      }
+      div.header {
+      width: 100vw;
+      margin: 0 auto;
+      margin-top: 60px;
+      }
+      .svg-tooltip {
+      background: rgba(69, 77, 93, .9);
+      border-radius: 5px;
+      color: #fff;
+      display: block;
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: none;
+      max-width: 320px;
+      padding: .7rem;
+      position: absolute;
+      text-overflow: ellipsis;
+      white-space: pre;
+      z-index: 300;
+      visibility: hidden;
+      }
+      #legend {
+      margin-top: 20px
+      }
+      #legend svg {
+      margin: 0 auto;}
+      #maps {
+      display: flex;
+      margin: 0 auto;
+      padding-left: 5%;
+      padding-right: 5%;
+      max-width: 100%;
+      min-width: 100%;
+      }
+      .map-title{
+      text-align: center;
+      font-family: 'Noto Sans', sans-serif;
+      color: #5e5e5e;
+      font-size: 12px;
+      }
+      .map-wrap{
+      display: inline;
+      width: 25%;
+      }
+      .charts {
+      max-width: 800px;
+      margin: 0 auto;
+      }
+      .datasource {
+      color:rgba(69, 77, 93, .9);
+      margin: 0 auto;
+      text-align: center;
+      font-size: 10px;
+      }
+      .chart-title {
+      color:black;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Merriweather', serif;
+      max-width: 800px;
+      margin-top: 30px;
+      }
+      .chart-subtitle {
+      color:rgba(69, 77, 93, .9);
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 300;
+      }
+      hr {
+      margin-top: 100px;
+      }
+      .footer {
+      height: 100px;
+      }
+      ul {
+         max-width: 800px;
+         margin: 0 auto;
+         padding-left: 40px;
+      }
+      img{
+         max-width: 800px;
+         margin: 0 auto;
+         display: block;
+      }
+   </style>
+   <body>
+      <div class="header">
+         <h1>
+            <div class="red">COVID-19 AND TRANSPORTATION:</div>
+            How the Pandemic Affected Where We Went and How We Got There
+         </h1>
+         <p id="subtitle">A look into how the COVID-19 pandemic impacted—and, in some ways, still impacts—transportation and mobility patterns across the United States.</p>
+         <h4>BY ALLISON TOWEY <br> <i id="subheadline">The University of Chicago</i></h4>
+      </div>
+      <div id="maps">
+         <div class="map-wrap">
+            <div class="map" id="map1"></div>
+            <p class="map-title">February 2020</p>
+         </div>
+         <div class="map-wrap">
+            <div class="map"id="map2"></div>
+            <p class="map-title">March 2020</p>
+         </div>
+         <div class="map-wrap">
+            <div class="map"id="map3"></div>
+            <p class="map-title">April 2020</p>
+         </div>
+         <div class="map-wrap">
+            <div class="map"id="map4"></div>
+            <p class="map-title">May 2020</p>
+         </div>
+      </div>
+      <div id="legend"></div>
+      <p class="datasource">
+         Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
+      </p>
+      <div id="container">
+         <p id="intro">Undoubtedly, the coronavirus pandemic has caused major, and at times lasting, effects on our lives. From how we work, to where we go to school, to how we shop, to how we socialize, our habits and routines have adapted to a new normal of increased remote access opportunities. The rise of telework, teleschool, online shopping, and video-chatting have decreased our need to leave our homes. In the immediate and uncertain days of the pandemic, these changes allowed for us to continue with our lives without in-person connection, slowing the transmission of the disease in the hopes of saving lives.
+
+          <br><br>With the worst days of the pandemic now (hopefully) in our rearview mirror, this “new normal” has had some lasting effects on our routines. In looking at American transportation patterns, we can see the effects of the pandemic on how often, how far, and with which transportation methods we travel, from the early days of the pandemic to now, nearly two years later.
+           </p>
+           <img src="img/nyc.jpeg">
+           <p class="datasource">
+            An empty scene in Times Square in New York City, April 2, 2020. Source: <a href="https://www.cnn.com/videos/us/2020/04/02/us-new-york-coronavirus-covid-19-pandemic-times-square-subway-quest-pkg-intl-ldn-vpx.cnn">CNN</a>
+         </p>
+        <h2>The pandemic’s effects on travel varied by location.</h2>
+         <p>As shown in the maps above, regional differences in the United States impact travel patterns. The Southeast, both before and during the early days of the pandemic, has a higher mobility rate, or more people, on average, leave their homes on a given day. 
+            <br><br> Across the country, however, travel decreased significantly in April as the pandemic spread through the country and lockdowns took effect. April had the lowest rate of people leaving their homes. Nationally, April 2, 2020 had a mobility rate of just over 63%. For context, the rate on April 2, 2019, just a year prior, was 89%. Such a change in the amount of travel in the United States likely has a variety of causes: school cancellations, telework opportunities, restaurant and bar closures, and more reduced the need for Americans to risk their health and leave home. </p>
+         <h3 class="chart-title">Percent Change in Mobility Rates By State</h3>
+         <h4 class="chart-subtitle">As a Percent of 2019 Mobility Data</h4>
+         <div class="charts" id="chart"></div>
+         <p class="datasource">
+            Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
+         </p>
+         <p>Interestingly, however, after the initial few months of the pandemic, the second half of 2020 and beginning of 2021 saw a resurgence of people traveling outside of the home. In fact, the spring and summer months of 2021 had a higher rate of travel year-over-year, showing a return, at least in part, to travel. Each state had a different path of mobility patterns through the pandemic, which different state laws permitting varying levels of travel. To explore these trends, hover over various states above.</p>
+         <p>
+            The pandemic not only affected if people would leave their homes, but also how far they traveled; in fact, local travel of less than 1 mile, was only somewhat decreased during the pandemic. Further travel was more severely impacted by the pandemic. Flight and travel cancellations undoubtedly had a role in the lower number of long trips taken. In 2020, over 4,000 flights, constituting over 1% of total flights, were cancelled entirely, with another 6% rescheduled to a later time. (<a href="https://www.transportation.gov/briefing-room/air-travel-consumer-report-december-2020-full-year-2020-numbers">Source: The Federal Aviation Administration</a>)
+         </p>
+         <h3 class="chart-title">National Number of Trips Taken By Distance From Home</h3>
+         <h4 class="chart-subtitle">Daily Data (in miles)</h4>
+         <div class="charts" id="chart3"></div>
+         <p class="datasource">
+            Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
+         </p>
+         <p>
+            While travel, both near and far, has rebounded since the early days of the pandemic in 2020, travel is still below its 2019 numbers. Though we are only a couple years removed, it appears that there has been a longer-term effect of the pandemic on our travel patterns, even as lockdowns, flight cancellations, and public health concerns have subsided.
+         </p>
+         <img src="img/bus.jpeg">
+           <p class="datasource">
+            Bus drivers in masks in Chicago, IL, April 2020. Source: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Factivetrans.org%2Fblog%2Fmobility-challenges-in-the-time-of-covid-19-on-chicagos-south-side&psig=AOvVaw3CVuNKM9yhIJvs1so8VKay&ust=1670370700754000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCMiCsPTV4_sCFQAAAAAdAAAAABAE">Active Transportation Alliance</a>
+         </p>
+         <h2>While car traffic has resumed, public transportation and aviation remain below their 2019 ridership numbers.</h2>
+         <p>
+            Every day, millions of commuters in the U.S. continue to rely on public forms of transportation, whether that is buses, rail, or aviation. Along with the decreased need to travel due to telework, teleschool, and other remote opportunities on the rise, the COVID-19 pandemic also forced riders to contend with social distancing and other safety measures. To adapt to the spread of the airborne virus, transportation agencies in major cities had to quickly change how they offered services. On planes, buses, and rail lines, social distancing measures, masking requirements, and decreased vehicles in service greatly impacted transportation as we know it.
+            <br><br> In fact to this day, bus, rail, and aviation ridership numbers remain below their 2019 rates, with buses racing the most significant decrease in ridership. The only form of transportation near its initial rate (denoted by miles traveled nationally) is automobile traffic. As car usage has rebounded, other, public forms of transportation have failed to recover quickly. It is unknown if such travel will return. As more remote socialization and working options arise, perhaps public transportation's levels will remain at their decreased clip, though only time can tell.
+         </p>
+         <h3 class="chart-title">Percent Change in Mobility Rates By Transportation Type</h3>
+         <h4 class="chart-subtitle">As a Percent of 2019 Transportation Ridership Data</h4>
+         <div class="charts" id="chart2"></div>
+         <p class="datasource">
+            Data from the US Department of Transportation's "Week in Transportation" <a href="https://www.bts.gov/covid-19/week-in-transportation">Passenger Modes Percent Change from Baseline</a> data.
+         </p>
+         <p>
+            While some pandemic-related changes to our transportation and travel have subsided, longer-term effects, such as decreased public transportation ridership, remain. In our new world of telework and video-conferencing with loved ones, where we go and how we get there remain an evolving process.
+         </p>
+
+         <hr />
+         <div id="process">
+            <h2>About the Process</h2>
+            <p>
+               <br>I became particularly interested in the topic of the changes in our transportation patterns because I think it exemplifies just how much the pandemic affected every aspect of our lives in 2020. Transportation is a good metric to view not only if people traveled, but also how far they went and how they got there. I was interested to see if transportation patterns had changed suddenly and then went back to normal, or if we are still experiencing a permanent shift in how we move about our communities and our country. How we travel has an impact on the environment, our economy, and our society in fundamental ways. By looking at these changes and understanding how our world remains altered since the pandemic, we are able to better understand our post-pandemic trajectory.
+               </br><br>For data, I selected the <a href="https://www.bts.gov/covid-19">Bureau of Transportation Statistics data</a> from the United States Department of Transportation. I particularly used data from Covid-19 Spotlight on the Bureau of Transportation Statistics webpage. For the mobility data (the choropleth charts, the number of trips taken by distance, and the line graph of national mobility by state), I used the <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> datasource. For the data about the methods of transportation (the multi-line graph), I used the Week in Transportation <a href="https://www.bts.gov/covid-19/week-in-transportation">Passenger Modes Percent Change from Baseline</a> data. 
+               <br><br>I chose these datasets because this data was by far the most comprehensive and available dataset of everything at which I had previously looked. The DoT amalgamated data from multiple governmental data sources, both local, i.e. city-run bus lines ridership, to federal, such as the Federal Aviation Administration’s flight tracking, making it a smooth process for me to gather and interpret a variety of data sources within one data portal. I considered using supplemental data about mobility and transportation patterns from survey research companies such as YouGov and the Pew Research Center. Additionally, I considered using Google’s Mobility Data, which is collected via surveys from multiple regional providers. I chose not to use survey research for this purpose because I wanted to rely on national, standardized data. I do not know weighting or corrective measures for survey research, and thus, I found using such data more time consuming and potentially less useful than the hard data that was provided from the Department of Transportation.
+               <br><br>I initially had planned to look at the relationship between the mobility data that I had collected from the Bureau of Transportation Statistics and environmental and pollution data from the Environmental Protection Agency (EPA). I had planned to look at the difference between car traffic data and the impact on greenhouse gas emissions. To do so, I performed some research and noted that the New York Times actually did the <a href="https://www.nytimes.com/interactive/2020/03/22/climate/coronavirus-usa-traffic.html">same type of project that I was envisioning</a>. I went back to the drawing board and realized that the story about mobility and changing transportation was just as interesting, and thus I pivoted to looking at transportation statistics more generally instead of focusing only on car and air traffic and their relationship with air pollution. After making this pivot, I looked even deeper into the BTS data available on their website and began concocting a story that I thought I could collect appropriate data for and tell an interesting story.
+               <br><br>The data I collected is fairly complete, with less than 20 missing datapoints in over 113,000 rows of data. This completeness is part of the reason that I selected this dataset, as because it is run by a government agency, it has access to national, state, and local data sources that I would have trouble accessing myself.
+               <br><br>This data is unidentifiable on an individual level, reducing ethical concerns about location tracking that sometimes do occur with location or geo-spatial data science (see the <a href="https://www.npr.org/2022/11/14/1136521305/google-settlement-location-tracking-data-privacy">Google Location Tracking </a>and the <a href="https://www.aclu.org/cases/aclu-v-department-homeland-security-commercial-location-data-foia">Department of Homeland Security</a> lawsuits). The transportation data comes from estimations and de-identifed travel information such as gross ridership numbers. To my knowledge, it does not rely on individual location tracking, so I do not think my particular project harbors any ethical concerns on that front. I also do not believe that my visualizations or story-telling require any disclosures, as I do not write about any specific vulnerable populations.
+               <br><br>I chose the specific charts I did for this project because they all tell part of the story, and they are particularly useful for temporal data, which is the main point of my data visualization article. I selected the style of a web article because I am interested in going into journalism after graduation. I selected a style similar to that of the Washington Post and the New York Times. The colors I selected are standard in D3. I used categorical colors for the multi-line and area graphs because color shows the difference between the groups and makes it easy for the viewer to understand the differences.
+               <br><br>First, I selected the choropleth maps charts because I wanted 1) to tell a story about how the effects of covid on mobility were different across different states and even different within states and 2) I thought they would add visual interest to my piece. I initially tried to create a moving, animated choropleth map that would go through the different months when a user clicked on the play button, but the integration of the play button and the maps was a large undertaking. I attempted to import a play button and animation code from Scrubber on Observable, but these were incompatible with the way in which I designed my choropleth code. Thus I settled on selecting four months in a row and using static graphics. Choropleth maps show variation across geo-spatial lines, so I thought this type of graph would be especially useful for showing variation of mobility rates in the early months of covid. The takeaway for this portion of the project was that animation of graphs can be difficult and that in the future, I perhaps should not spend days on a graph that in the end I will not be able to use due to its difficulty. I still would like to try to figure out how to write this code, but I will have to do so after the culmination of this course.
+               <br><br>For the second graph, I wanted to show the variation of mobility across states in comparison to 2019 mobility rates in the same months. I wanted to highlight just how much change from a typical spring 2020 was. I decided that I wanted to show the variation in states and their percent change from the previous year, but because there are 50 states, I knew I could not have all of the lines shown at once. I decided to make the graph interactive and have all of the lines grayed out until you hover over the state of your choice. I wanted to implement a drop down as well so users could more easily find the state of their choosing, but this too caused coding difficulties, so I decided against adding this functionality.
+               <br><br>For the third graph, I wanted to show that the amount of trips Americans took outside of the home were seriously impacted by covid, but also the distance traveled varied as well. An area chart is a good way to show parts of a whole temporally. This chart not only shows the overall trend (total number of trips) but also variation in the number of trips in each distance category. I wanted to highlight that local trips of less than 1 mile were not as impacted by the pandemic as other lengths of trip, so I thought an area chart would appropriately work for this data. I encountered difficulties with the stacking and grouping of my data, and decided to work in D3 version 4 for its .stack() and .nest() functionalities that were removed in future iterations. While this caused some upfront work, I think having two forms for D3 for this small purpose made coding simpler for me and saved me time.
+               <br><br>Finally, for my last chart, I wanted to show percent change in different types of transportation, so I decided a simple four color line chart would suffice. This style of chart is familiar to viewers and informative, so I thought it was a good format. I added a dashed line at the 0 percent change marker to show that all modes of transportation (except car travel) are still used less than prior to the pandemic. Of all of the charts, I encountered the least amount of difficulty with this chart’s coding.
+               <br><br>Overall, my takeaways from this project are 1) looking at the version of D3 when searching for coding examples is important and 2) debugging takes significantly longer than expected. I enjoyed this project and hope to continue honing my D3 skills so I can perform more advanced tasks and augment my article with animations and transitions.
+            </p>
+            <hr />
+            <h2>Code References for Charts</h2>
+            <p>
+               The references used in this project are from Mike Bostock.
+               <ul>
+               <li>Area Chart <a href="https://bl.ocks.org/mbostock/3885211">Reference</a></li>
+               <li>Line Chart <a href="https://observablehq.com/@d3/multi-line-chart">Reference</a></li>
+               <li>Chloropleth Map <a href="https://observablehq.com/@d3/choropleth">Reference</a></li>
+            </ul>
+            </p>
+         </div>
+      </div>
+      <div class="footer"></div>
+   </body>
+   <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+   <script src="https://d3js.org/d3.v7.min.js"></script>
+   <script src="d3.v3.js"></script>
+   <script src="libs/d3-color-legend.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+   <script src="chart1.js"></script>
+   <script src="chart2.js"></script>
+   <script src="map.js"></script>
+   <script src="map2.js"></script>
+   <script src="map3.js"></script>
+   <script src="map4.js"></script>
+   <script src="chart3.js"></script>
+</html>
+

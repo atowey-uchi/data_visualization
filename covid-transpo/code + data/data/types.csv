@@ -1,0 +1,422 @@
+Date,Location,Value
+9-Feb-20,Roadways,0.01
+16-Feb-20,Roadways,0.03
+23-Feb-20,Roadways,0.04
+1-Mar-20,Roadways,0.03
+8-Mar-20,Roadways,0.01
+15-Mar-20,Roadways,-0.07
+22-Mar-20,Roadways,-0.33
+29-Mar-20,Roadways,-0.51
+5-Apr-20,Roadways,-0.54
+12-Apr-20,Roadways,-0.55
+19-Apr-20,Roadways,-0.51
+26-Apr-20,Roadways,-0.48
+3-May-20,Roadways,-0.4
+10-May-20,Roadways,-0.32
+17-May-20,Roadways,-0.34
+24-May-20,Roadways,-0.29
+31-May-20,Roadways,-0.27
+7-Jun-20,Roadways,-0.24
+14-Jun-20,Roadways,-0.22
+21-Jun-20,Roadways,-0.17
+28-Jun-20,Roadways,-0.17
+5-Jul-20,Roadways,-0.18
+12-Jul-20,Roadways,-0.18
+19-Jul-20,Roadways,-0.17
+26-Jul-20,Roadways,-0.17
+2-Aug-20,Roadways,-0.17
+9-Aug-20,Roadways,-0.14
+16-Aug-20,Roadways,-0.14
+23-Aug-20,Roadways,-0.12
+30-Aug-20,Roadways,-0.16
+6-Sep-20,Roadways,-0.06
+13-Sep-20,Roadways,-0.09
+20-Sep-20,Roadways,-0.11
+27-Sep-20,Roadways,-0.1
+4-Oct-20,Roadways,-0.09
+11-Oct-20,Roadways,-0.1
+18-Oct-20,Roadways,-0.09
+25-Oct-20,Roadways,-0.12
+1-Nov-20,Roadways,-0.13
+8-Nov-20,Roadways,-0.13
+15-Nov-20,Roadways,-0.15
+22-Nov-20,Roadways,-0.15
+29-Nov-20,Roadways,-0.17
+6-Dec-20,Roadways,-0.17
+13-Dec-20,Roadways,-0.15
+20-Dec-20,Roadways,-0.19
+27-Dec-20,Roadways,-0.17
+3-Jan-21,Roadways,-0.1
+10-Jan-21,Roadways,-0.09
+17-Jan-21,Roadways,-0.08
+24-Jan-21,Roadways,-0.11
+31-Jan-21,Roadways,-0.1
+7-Feb-21,Roadways,-0.1
+14-Feb-21,Roadways,-0.16
+21-Feb-21,Roadways,-0.17
+28-Feb-21,Roadways,-0.11
+7-Mar-21,Roadways,-0.09
+14-Mar-21,Roadways,-0.1
+21-Mar-21,Roadways,-0.09
+28-Mar-21,Roadways,-0.08
+4-Apr-21,Roadways,-0.03
+11-Apr-21,Roadways,-0.01
+18-Apr-21,Roadways,-0.09
+25-Apr-21,Roadways,-0.1
+2-May-21,Roadways,-0.06
+9-May-21,Roadways,-0.06
+16-May-21,Roadways,-0.05
+23-May-21,Roadways,-0.06
+30-May-21,Roadways,-0.02
+6-Jun-21,Roadways,-0.006
+13-Jun-21,Roadways,-0.04
+20-Jun-21,Roadways,-0.02
+27-Jun-21,Roadways,-0.03
+4-Jul-21,Roadways,-0.03
+11-Jul-21,Roadways,-0.02
+18-Jul-21,Roadways,-0.02
+25-Jul-21,Roadways,-0.01
+1-Aug-21,Roadways,-0.02
+8-Aug-21,Roadways,-0.02
+15-Aug-21,Roadways,-0.02
+22-Aug-21,Roadways,-0.01
+29-Aug-21,Roadways,-0.05
+5-Sep-21,Roadways,-0.02
+12-Sep-21,Roadways,-0.02
+19-Sep-21,Roadways,-0.04
+26-Sep-21,Roadways,-0.04
+3-Oct-21,Roadways,-0.02
+10-Oct-21,Roadways,-0.03
+17-Oct-21,Roadways,-0.01
+24-Oct-21,Roadways,-0.03
+31-Oct-21,Roadways,-0.02
+7-Nov-21,Roadways,-0.02
+14-Nov-21,Roadways,0.0
+21-Nov-21,Roadways,0.0
+28-Nov-21,Roadways,0.019
+5-Dec-21,Roadways,0.006
+12-Dec-21,Roadways,-0.028
+19-Dec-21,Roadways,-0.058
+26-Dec-21,Roadways,-0.047
+2-Jan-22,Roadways,-0.012
+9-Jan-22,Roadways,-0.043
+16-Jan-22,Roadways,-0.023
+23-Jan-22,Roadways,-0.088
+30-Jan-22,Roadways,-0.034
+6-Feb-22,Roadways,-0.036
+9-Feb-20,Aviation,0.04
+16-Feb-20,Aviation,0.03
+23-Feb-20,Aviation,0.02
+1-Mar-20,Aviation,-0.06
+8-Mar-20,Aviation,-0.23
+15-Mar-20,Aviation,-0.61
+22-Mar-20,Aviation,-0.88
+29-Mar-20,Aviation,-0.94
+5-Apr-20,Aviation,-0.95
+12-Apr-20,Aviation,-0.96
+19-Apr-20,Aviation,-0.95
+26-Apr-20,Aviation,-0.94
+3-May-20,Aviation,-0.93
+10-May-20,Aviation,-0.91
+17-May-20,Aviation,-0.89
+24-May-20,Aviation,-0.87
+31-May-20,Aviation,-0.85
+7-Jun-20,Aviation,-0.82
+14-Jun-20,Aviation,-0.8
+21-Jun-20,Aviation,-0.78
+28-Jun-20,Aviation,-0.73
+5-Jul-20,Aviation,-0.73
+12-Jul-20,Aviation,-0.73
+19-Jul-20,Aviation,-0.74
+26-Jul-20,Aviation,-0.73
+2-Aug-20,Aviation,-0.72
+9-Aug-20,Aviation,-0.7
+16-Aug-20,Aviation,-0.7
+23-Aug-20,Aviation,-0.7
+30-Aug-20,Aviation,-0.62
+6-Sep-20,Aviation,-0.66
+13-Sep-20,Aviation,-0.69
+20-Sep-20,Aviation,-0.67
+27-Sep-20,Aviation,-0.66
+4-Oct-20,Aviation,-0.65
+11-Oct-20,Aviation,-0.63
+18-Oct-20,Aviation,-0.63
+25-Oct-20,Aviation,-0.62
+1-Nov-20,Aviation,-0.65
+8-Nov-20,Aviation,-0.64
+15-Nov-20,Aviation,-0.62
+22-Nov-20,Aviation,-0.61
+29-Nov-20,Aviation,-0.65
+6-Dec-20,Aviation,-0.68
+13-Dec-20,Aviation,-0.64
+20-Dec-20,Aviation,-0.59
+27-Dec-20,Aviation,-0.53
+3-Jan-21,Aviation,-0.54
+10-Jan-21,Aviation,-0.62
+17-Jan-21,Aviation,-0.63
+24-Jan-21,Aviation,-0.63
+31-Jan-21,Aviation,-0.63
+7-Feb-21,Aviation,-0.59
+14-Feb-21,Aviation,-0.6
+21-Feb-21,Aviation,-0.57
+28-Feb-21,Aviation,-0.56
+7-Mar-21,Aviation,-0.52
+14-Mar-21,Aviation,-0.46
+21-Mar-21,Aviation,-0.43
+28-Mar-21,Aviation,-0.38
+4-Apr-21,Aviation,-0.39
+11-Apr-21,Aviation,-0.42
+18-Apr-21,Aviation,-0.42
+25-Apr-21,Aviation,-0.41
+2-May-21,Aviation,-0.38
+9-May-21,Aviation,-0.34
+16-May-21,Aviation,-0.34
+23-May-21,Aviation,-0.26
+30-May-21,Aviation,-0.29
+6-Jun-21,Aviation,-0.28
+13-Jun-21,Aviation,-0.25
+20-Jun-21,Aviation,-0.24
+27-Jun-21,Aviation,-0.14
+4-Jul-21,Aviation,-0.24
+11-Jul-21,Aviation,-0.21
+18-Jul-21,Aviation,-0.2
+25-Jul-21,Aviation,-0.2
+1-Aug-21,Aviation,-0.21
+8-Aug-21,Aviation,-0.21
+15-Aug-21,Aviation,-0.23
+22-Aug-21,Aviation,-0.26
+29-Aug-21,Aviation,-0.15
+5-Sep-21,Aviation,-0.25
+12-Sep-21,Aviation,-0.28
+19-Sep-21,Aviation,-0.25
+26-Sep-21,Aviation,-0.23
+3-Oct-21,Aviation,-0.22
+10-Oct-21,Aviation,-0.19
+17-Oct-21,Aviation,-0.23
+24-Oct-21,Aviation,-0.16
+31-Oct-21,Aviation,-0.23
+7-Nov-21,Aviation,-0.18
+14-Nov-21,Aviation,-0.14
+21-Nov-21,Aviation,-0.11
+28-Nov-21,Aviation,-0.17
+5-Dec-21,Aviation,-0.19
+12-Dec-21,Aviation,-0.19
+19-Dec-21,Aviation,-0.19
+26-Dec-21,Aviation,-0.18
+2-Jan-22,Aviation,-0.16
+9-Jan-22,Aviation,-0.26
+16-Jan-22,Aviation,-0.28
+23-Jan-22,Aviation,-0.27
+30-Jan-22,Aviation,-0.27
+6-Feb-22,Aviation,-0.24
+9-Feb-20,Passenger Rail,0.01
+16-Feb-20,Passenger Rail,0.04
+23-Feb-20,Passenger Rail,0.02
+1-Mar-20,Passenger Rail,0.02
+8-Mar-20,Passenger Rail,-0.08
+15-Mar-20,Passenger Rail,-0.43
+22-Mar-20,Passenger Rail,-0.83
+29-Mar-20,Passenger Rail,-0.93
+5-Apr-20,Passenger Rail,-0.95
+12-Apr-20,Passenger Rail,-0.96
+19-Apr-20,Passenger Rail,-0.96
+26-Apr-20,Passenger Rail,-0.95
+3-May-20,Passenger Rail,-0.94
+10-May-20,Passenger Rail,-0.93
+17-May-20,Passenger Rail,-0.93
+24-May-20,Passenger Rail,-0.92
+31-May-20,Passenger Rail,-0.9
+7-Jun-20,Passenger Rail,-0.88
+14-Jun-20,Passenger Rail,-0.86
+21-Jun-20,Passenger Rail,-0.83
+28-Jun-20,Passenger Rail,-0.82
+5-Jul-20,Passenger Rail,-0.77
+12-Jul-20,Passenger Rail,-0.8
+19-Jul-20,Passenger Rail,-0.82
+26-Jul-20,Passenger Rail,-0.81
+2-Aug-20,Passenger Rail,-0.8
+9-Aug-20,Passenger Rail,-0.8
+16-Aug-20,Passenger Rail,-0.79
+23-Aug-20,Passenger Rail,-0.78
+30-Aug-20,Passenger Rail,-0.77
+6-Sep-20,Passenger Rail,-0.74
+13-Sep-20,Passenger Rail,-0.72
+20-Sep-20,Passenger Rail,-0.75
+27-Sep-20,Passenger Rail,-0.74
+4-Oct-20,Passenger Rail,-0.74
+11-Oct-20,Passenger Rail,-0.74
+18-Oct-20,Passenger Rail,-0.76
+25-Oct-20,Passenger Rail,-0.75
+1-Nov-20,Passenger Rail,-0.73
+8-Nov-20,Passenger Rail,-0.77
+15-Nov-20,Passenger Rail,-0.78
+22-Nov-20,Passenger Rail,-0.78
+29-Nov-20,Passenger Rail,-0.81
+6-Dec-20,Passenger Rail,-0.81
+13-Dec-20,Passenger Rail,-0.84
+20-Dec-20,Passenger Rail,-0.83
+27-Dec-20,Passenger Rail,-0.77
+3-Jan-21,Passenger Rail,-0.71
+10-Jan-21,Passenger Rail,-0.75
+17-Jan-21,Passenger Rail,-0.78
+24-Jan-21,Passenger Rail,-0.79
+31-Jan-21,Passenger Rail,-0.75
+7-Feb-21,Passenger Rail,-0.78
+14-Feb-21,Passenger Rail,-0.73
+21-Feb-21,Passenger Rail,-0.74
+28-Feb-21,Passenger Rail,-0.74
+7-Mar-21,Passenger Rail,-0.73
+14-Mar-21,Passenger Rail,-0.73
+21-Mar-21,Passenger Rail,-0.7
+28-Mar-21,Passenger Rail,-0.68
+4-Apr-21,Passenger Rail,-0.65
+11-Apr-21,Passenger Rail,-0.66
+18-Apr-21,Passenger Rail,-0.68
+25-Apr-21,Passenger Rail,-0.65
+2-May-21,Passenger Rail,-0.64
+9-May-21,Passenger Rail,-0.62
+16-May-21,Passenger Rail,-0.61
+23-May-21,Passenger Rail,-0.59
+30-May-21,Passenger Rail,-0.48
+6-Jun-21,Passenger Rail,-0.45
+13-Jun-21,Passenger Rail,-0.47
+20-Jun-21,Passenger Rail,-0.43
+27-Jun-21,Passenger Rail,-0.41
+4-Jul-21,Passenger Rail,-0.37
+11-Jul-21,Passenger Rail,-0.34
+18-Jul-21,Passenger Rail,-0.39
+25-Jul-21,Passenger Rail,-0.33
+1-Aug-21,Passenger Rail,-0.33
+8-Aug-21,Passenger Rail,-0.34
+15-Aug-21,Passenger Rail,-0.36
+22-Aug-21,Passenger Rail,-0.38
+29-Aug-21,Passenger Rail,-0.36
+5-Sep-21,Passenger Rail,-0.4
+12-Sep-21,Passenger Rail,-0.29
+19-Sep-21,Passenger Rail,-0.37
+26-Sep-21,Passenger Rail,-0.36
+3-Oct-21,Passenger Rail,-0.38
+10-Oct-21,Passenger Rail,-0.29
+17-Oct-21,Passenger Rail,-0.31
+24-Oct-21,Passenger Rail,-0.28
+31-Oct-21,Passenger Rail,-0.28
+7-Nov-21,Passenger Rail,-0.31
+14-Nov-21,Passenger Rail,-0.3
+21-Nov-21,Passenger Rail,-0.447
+28-Nov-21,Passenger Rail,-0.345
+5-Dec-21,Passenger Rail,-0.243
+12-Dec-21,Passenger Rail,-0.295
+19-Dec-21,Passenger Rail,-0.3
+26-Dec-21,Passenger Rail,-0.301
+2-Jan-22,Passenger Rail,-0.153
+9-Jan-22,Passenger Rail,-0.424
+16-Jan-22,Passenger Rail,-0.494
+23-Jan-22,Passenger Rail,-0.48
+30-Jan-22,Passenger Rail,-0.438
+6-Feb-22,Passenger Rail,-0.432
+9-Feb-20,Intercity Bus,-0.01
+16-Feb-20,Intercity Bus,-0.02
+23-Feb-20,Intercity Bus,-0.02
+1-Mar-20,Intercity Bus,-0.06
+8-Mar-20,Intercity Bus,-0.12
+15-Mar-20,Intercity Bus,-0.33
+22-Mar-20,Intercity Bus,-0.61
+29-Mar-20,Intercity Bus,-0.79
+5-Apr-20,Intercity Bus,-0.83
+12-Apr-20,Intercity Bus,-0.86
+19-Apr-20,Intercity Bus,-0.85
+26-Apr-20,Intercity Bus,-0.83
+3-May-20,Intercity Bus,-0.8
+10-May-20,Intercity Bus,-0.79
+17-May-20,Intercity Bus,-0.77
+24-May-20,Intercity Bus,-0.76
+31-May-20,Intercity Bus,-0.74
+7-Jun-20,Intercity Bus,-0.73
+14-Jun-20,Intercity Bus,-0.7
+21-Jun-20,Intercity Bus,-0.69
+28-Jun-20,Intercity Bus,-0.7
+5-Jul-20,Intercity Bus,-0.7
+12-Jul-20,Intercity Bus,-0.7
+19-Jul-20,Intercity Bus,-0.72
+26-Jul-20,Intercity Bus,-0.72
+2-Aug-20,Intercity Bus,-0.72
+9-Aug-20,Intercity Bus,-0.71
+16-Aug-20,Intercity Bus,-0.7
+23-Aug-20,Intercity Bus,-0.69
+30-Aug-20,Intercity Bus,-0.7
+6-Sep-20,Intercity Bus,-0.6
+13-Sep-20,Intercity Bus,-0.65
+20-Sep-20,Intercity Bus,-0.65
+27-Sep-20,Intercity Bus,-0.64
+4-Oct-20,Intercity Bus,-0.67
+11-Oct-20,Intercity Bus,-0.68
+18-Oct-20,Intercity Bus,-0.66
+25-Oct-20,Intercity Bus,-0.66
+1-Nov-20,Intercity Bus,-0.67
+8-Nov-20,Intercity Bus,-0.68
+15-Nov-20,Intercity Bus,-0.68
+22-Nov-20,Intercity Bus,-0.7
+29-Nov-20,Intercity Bus,-0.72
+6-Dec-20,Intercity Bus,-0.72
+13-Dec-20,Intercity Bus,-0.73
+20-Dec-20,Intercity Bus,-0.73
+27-Dec-20,Intercity Bus,-0.69
+3-Jan-21,Intercity Bus,-0.67
+10-Jan-21,Intercity Bus,-0.66
+17-Jan-21,Intercity Bus,-0.68
+24-Jan-21,Intercity Bus,-0.67
+31-Jan-21,Intercity Bus,-0.66
+7-Feb-21,Intercity Bus,-0.66
+14-Feb-21,Intercity Bus,-0.67
+21-Feb-21,Intercity Bus,-0.72
+28-Feb-21,Intercity Bus,-0.68
+7-Mar-21,Intercity Bus,-0.63
+14-Mar-21,Intercity Bus,-0.65
+21-Mar-21,Intercity Bus,-0.58
+28-Mar-21,Intercity Bus,-0.57
+4-Apr-21,Intercity Bus,-0.58
+11-Apr-21,Intercity Bus,-0.58
+18-Apr-21,Intercity Bus,-0.61
+25-Apr-21,Intercity Bus,-0.6
+2-May-21,Intercity Bus,-0.61
+9-May-21,Intercity Bus,-0.6
+16-May-21,Intercity Bus,-0.6
+23-May-21,Intercity Bus,-0.59
+30-May-21,Intercity Bus,-0.57
+6-Jun-21,Intercity Bus,-0.58
+13-Jun-21,Intercity Bus,-0.57
+20-Jun-21,Intercity Bus,-0.57
+27-Jun-21,Intercity Bus,-0.57
+4-Jul-21,Intercity Bus,-0.56
+11-Jul-21,Intercity Bus,-0.57
+18-Jul-21,Intercity Bus,-0.56
+25-Jul-21,Intercity Bus,-0.57
+1-Aug-21,Intercity Bus,-0.59
+8-Aug-21,Intercity Bus,-0.57
+15-Aug-21,Intercity Bus,-0.59
+22-Aug-21,Intercity Bus,-0.59
+29-Aug-21,Intercity Bus,-0.6
+5-Sep-21,Intercity Bus,-0.47
+12-Sep-21,Intercity Bus,-0.55
+19-Sep-21,Intercity Bus,-0.54
+26-Sep-21,Intercity Bus,-0.56
+3-Oct-21,Intercity Bus,-0.57
+10-Oct-21,Intercity Bus,-0.56
+17-Oct-21,Intercity Bus,-0.54
+24-Oct-21,Intercity Bus,-0.54
+31-Oct-21,Intercity Bus,-0.56
+7-Nov-21,Intercity Bus,-0.53
+14-Nov-21,Intercity Bus,-0.48
+21-Nov-21,Intercity Bus,-0.46
+28-Nov-21,Intercity Bus,-0.5
+5-Dec-21,Intercity Bus,-0.525
+12-Dec-21,Intercity Bus,-0.514
+19-Dec-21,Intercity Bus,-0.502
+26-Dec-21,Intercity Bus,-0.521
+2-Jan-22,Intercity Bus,-0.562
+9-Jan-22,Intercity Bus,-0.539
+16-Jan-22,Intercity Bus,-0.587
+23-Jan-22,Intercity Bus,-0.587
+30-Jan-22,Intercity Bus,-0.589
+6-Feb-22,Intercity Bus,-0.584
+
