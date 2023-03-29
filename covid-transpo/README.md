@@ -1,7 +1,7 @@
 
 
 # COVID-19 AND TRANSPORTATION: How the Pandemic Affected Where We Went and How We Got There
-## Link to Project: https://atowey-uchi.github.io/CAPP30239_FA22/completed/
+## Link to Project: https://atowey-uchi.github.io/data_visualization/covid-transpo/code%20%2B%20data/index.html
 
 ## Files in Repository:
 
