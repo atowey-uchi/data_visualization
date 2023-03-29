@@ -11,10 +11,10 @@
       Currently-Married Ukrainian Women's Experiences of Intimate Partner
       Violence Given How Often Husband Drinks, 2007
     </h1>
-    <h3 class="viz_subtitle">Respondent Reports Husband Drinks:</h2>
+    <h3 class="viz_subtitle">Respondent Reports Husband Drinks:</h3>
     <div class="matrices">
       <div class="panel never">
-        <h3 class="panel_title">Never</h2>
+        <h3 class="panel_title">Never</h3>
         <div class="panel_matrix">
           <div class="line">
             <div class="box phys"></div>
@@ -278,19 +278,23 @@
           </div>
         </div>
         <div class="legend">
-            <h4>Respondent Reports Having Experienced</h4>
-            <div class="legend-entry">
-                <div class="legend-box phys"></div>
-                <p class="legend-text">Physical Violence</p>
-            </div>
-            <div class="legend-entry">
-                <div class="legend-box sex"></div>
-                <p class="legend-text">Sexual Violence</p>
-            </div>
-            <div class="legend-entry">
-                <div class="legend-box emo"></div>
-                <p class="legend-text">Emotional Violence</p>
-            </div>
+          <h4>Respondent Reports Having Experienced</h4>
+          <div class="legend-entry">
+            <div class="legend-box phys"></div>
+            <p class="legend-text">Physical Violence</p>
+          </div>
+          <div class="legend-entry">
+            <div class="legend-box sex"></div>
+            <p class="legend-text">Sexual Violence</p>
+          </div>
+          <div class="legend-entry">
+            <div class="legend-box emo"></div>
+            <p class="legend-text">Emotional Violence</p>
+          </div>
+          <div class="legend-entry">
+            <div class="legend-box nothing"></div>
+            <p class="legend-text">No Violence Reported</p>
+          </div>
         </div>
       </div>
       <div class="panel sometimes">
@@ -1059,7 +1063,6 @@
             <div class="box emo-phys"></div>
             <div class="box emo-phys"></div>
             <div class="box emo-phys"></div>
-
           </div>
           <div class="line">
             <div class="box emo-phys"></div>
@@ -1082,7 +1085,6 @@
             <div class="box emo-sex"></div>
             <div class="box all"></div>
             <div class="box all"></div>
-
           </div>
           <div class="line">
             <div class="box all"></div>
@@ -1105,7 +1107,6 @@
             <div class="box all"></div>
             <div class="box nothing"></div>
             <div class="box nothing"></div>
-
           </div>
           <div class="line">
             <div class="box nothing"></div>
@@ -1145,7 +1146,6 @@
             <div class="box nothing"></div>
             <div class="box nothing"></div>
             <div class="box nothing"></div>
-          </div>
           </div>
         </div>
       </div>
@@ -1265,7 +1265,11 @@
 
     .all::after {
       --width: 7px;
-      clip-path: polygon(100% 100%, 100% calc(100% - var(--width)), calc(100% - var(--width)) 100%);
+      clip-path: polygon(
+        100% 100%,
+        100% calc(100% - var(--width)),
+        calc(100% - var(--width)) 100%
+      );
       background-color: #d80c0c;
     }
 
@@ -1288,32 +1292,34 @@
     }
 
     .legend h4 {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
     }
 
     .legend p {
-        font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     h1 {
-        font-size: 24px;
-        font-weight: 600;
+      font-size: 24px;
+      font-weight: 600;
     }
 
-    h3{
-font-size: 20px;
-font-weight: normal;
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
     }
 
-    h4{
-font-size: 18px;
-font-weight: normal;
+    h4 {
+      font-size: 18px;
+      font-weight: normal;
     }
 
-    p{
-font-size: 12px
-font-weight: normal;
+    p {
+      font-size: 12px;
+      font-weight: normal;
+      padding-top: 2.5px;
+      padding-bottom: 0.5px;
     }
   </style>
 </html>
