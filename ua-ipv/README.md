@@ -18,8 +18,13 @@ Overall, this allows viewers to 1) compare frequencies of how often women report
 Confirming the strong relationship between frequent alcohol consumption and intimate partner violence suggested by previous epidemiological studies (Foran and O’Leary 2008), this visualization underscores the prevalence of IPV in Ukraine and the role of alcohol as a risk factor in intimate partnerships. The current conditions of conflict in Ukraine has disrupted daily life, including the collection of health and familial relationships data. Research from other conflict settings suggests that the stress of armed conflict exacerbates IPV, among other social problems (Annan and Brier, 2010). As the consequences of war are cataloged and examined by scholars and humanitarian workers, updating our knowledge about the experiences of families should be counted among the many urgent questions that need to be answered. 
 
 References:
-Annan, J., & Brier, M. (2010). The risk of return: intimate partner violence in Northern Uganda's armed conflict. Social science & medicine, 70(1), 152-159.
-Barrett BJ, Habibov N, Chernyak E. Factors affecting prevalence and extent of intimate partner violence in Ukraine: evidence from a nationally representative survey. Violence Against Women. 2012;18(10):1147–1176
-Bromet, EJ., et al. Epidemiology of psychiatric and alcohol disorders in Ukraine. Social psychiatry and psychiatric epidemiology 40.9 (2005): 681-690.
-Foran HM, O'Leary KD. Alcohol and intimate partner violence: a meta-analytic review. Clin Psychol Rev. 2008 Oct;28(7):1222-34. 
-Ismayilova, L. Spousal violence in 5 transitional countries: a population-based multilevel analysis of individual and contextual factors. American Journal of Public Health 105.11 (2015): e12-e22.
+
+1. Annan, J., & Brier, M. (2010). The risk of return: intimate partner violence in Northern Uganda's armed conflict. Social science & medicine, 70(1), 152-159.
+
+2. Barrett BJ, Habibov N, Chernyak E. Factors affecting prevalence and extent of intimate partner violence in Ukraine: evidence from a nationally representative survey. Violence Against Women. 2012;18(10):1147–1176
+
+3. Bromet, EJ., et al. Epidemiology of psychiatric and alcohol disorders in Ukraine. Social psychiatry and psychiatric epidemiology 40.9 (2005): 681-690.
+
+4. Foran HM, O'Leary KD. Alcohol and intimate partner violence: a meta-analytic review. Clin Psychol Rev. 2008 Oct;28(7):1222-34. 
+
+5. Ismayilova, L. Spousal violence in 5 transitional countries: a population-based multilevel analysis of individual and contextual factors. American Journal of Public Health 105.11 (2015): e12-e22.
