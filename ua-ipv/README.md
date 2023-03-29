@@ -3,7 +3,7 @@
 ## Link to HTML Visualization: https://atowey-uchi.github.io/data_visualization/ua-ipv/ua-ipv.html
 
 ## Visualization (PNG):
-![Ukraine IPV Data Visualization](https://user-images.githubusercontent.com/89881145/228403970-84d2b5db-0993-48c5-abb9-edfc30939e39.png)
+![ua-ipv](https://user-images.githubusercontent.com/89881145/228588750-d557e551-ae06-43df-bb7d-d21ca11a9e88.png)
 **Figure 1:** A square matrix chart depicting the frequency of ever-married Ukrainian women reporting the lifetime experience of intimate partner violence (IPV) partitioned by their report of how often their husbands drink: ‘never’, ‘sometimes’, or ‘often’ and colored denoting the proportion of women who have experienced physical, sexual, or emotional violence or a combination thereof. Each square represents .1% of the total weighted sample of Ukrainian women from the 2007 Demographic and Health Survey, for a total of 1000 squares. 
 
 ## Full Text:
