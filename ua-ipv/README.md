@@ -1,10 +1,8 @@
 # Currently-Married Ukrainian Women's Experiences of Intimate Partner Violence Given How Often Husband Drinks, 2007
 
-*Data and Vizualization Code*
+## Link to HTML Visualization: https://atowey-uchi.github.io/data_visualization/ua-ipv/ua-ipv.html
 
-Allison Towey, University of Chicago, March 2023
-
-## Visualization:
+## Visualization (PNG):
 ![Ukraine IPV Data Visualization](https://user-images.githubusercontent.com/89881145/228403970-84d2b5db-0993-48c5-abb9-edfc30939e39.png)
 
 ## Full Text:
