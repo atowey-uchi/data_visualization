@@ -28,3 +28,12 @@ Confirming the strong relationship between frequent alcohol consumption and inti
 4. Foran HM, O'Leary KD. Alcohol and intimate partner violence: a meta-analytic review. Clin Psychol Rev. 2008 Oct;28(7):1222-34. 
 
 5. Ismayilova, L. Spousal violence in 5 transitional countries: a population-based multilevel analysis of individual and contextual factors. American Journal of Public Health 105.11 (2015): e12-e22.
+
+## Replication Code (STATA)
+
+## Data (CSV)
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv%20data.csv
+
+## Code to Crete Visualization (HTML)
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv.html
+
