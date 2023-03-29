@@ -17,7 +17,7 @@ Overall, this allows viewers to 1) compare frequencies of how often women report
 
 Confirming the strong relationship between frequent alcohol consumption and intimate partner violence suggested by previous epidemiological studies (Foran and O’Leary 2008), this visualization underscores the prevalence of IPV in Ukraine and the role of alcohol as a risk factor in intimate partnerships. The current conditions of conflict in Ukraine has disrupted daily life, including the collection of health and familial relationships data. Research from other conflict settings suggests that the stress of armed conflict exacerbates IPV, among other social problems (Annan and Brier, 2010). As the consequences of war are cataloged and examined by scholars and humanitarian workers, updating our knowledge about the experiences of families should be counted among the many urgent questions that need to be answered. 
 
-References:
+### References:
 
 1. Annan, J., & Brier, M. (2010). The risk of return: intimate partner violence in Northern Uganda's armed conflict. Social science & medicine, 70(1), 152-159.
 
