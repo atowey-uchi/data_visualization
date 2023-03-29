@@ -31,11 +31,13 @@ Confirming the strong relationship between frequent alcohol consumption and inti
 
 5. Ismayilova, L. Spousal violence in 5 transitional countries: a population-based multilevel analysis of individual and contextual factors. American Journal of Public Health 105.11 (2015): e12-e22.
 
-## Replication Code (STATA)
+## Repo Code Overview
 
-## Data (CSV)
+### Replication Code (STATA)
+
+### Data (CSV)
 https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv%20data.csv
 
-## Code to Crete Visualization (HTML)
+### Code to Create Visualization (HTML)
 https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv.html
 
