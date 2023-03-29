@@ -3,7 +3,7 @@ use "C:\Users\atowey\OneDrive - The University of Chicago\Downloads\UA_2007_DHS_
 #Generate weights
 gen wgt = d005/1000000
 
-# Subset our data to if the respondent answered how often their husband drinks
+# Subset our data to if the respondent answered how often their husband drinks (d114)
 keep if d114 == 0 | d114 == 1 | d114 == 2
 
 # Grab all physical and combine severe and less severe
