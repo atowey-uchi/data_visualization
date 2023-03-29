@@ -1,4 +1,4 @@
-# Data Visualizations
+# Data Visualization Portfolio
 
 ## Covid Transportation
 
