@@ -28,7 +28,6 @@ gen phys_emo = (emo==1)&(sexual==0)&(anyphys==1)
 gen sex_emo = (emo==1)&(sexual==1)&(anyphys==0)
 
 #Tabulate all findings
-
 tabulate d114 all_types [iweight=wgt]
 tabulate d114 phys_sex [iweight=wgt]
 tabulate d114 phys_emo [iweight=wgt]
