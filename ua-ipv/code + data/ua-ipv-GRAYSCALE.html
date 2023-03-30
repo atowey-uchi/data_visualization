@@ -1188,9 +1188,9 @@
         Ukrainian women, for a total of 1000 squares. Within each group, the
         proportion of women who report intimate partner violence are denoted by
         the color of the square: those experiencing physical violence are
-        denoted in yellow, emotional violence in blue, and sexual violence in
-        red. Because women can and do experience multiple types of IPV,
-        combinations of violence are represented by multi-colored squares.
+        denoted in black, emotional violence in light gray, and sexual violence
+        in medium gray. Because women can and do experience multiple types of
+        IPV, combinations of violence are represented by multi-shaded squares.
         <br /><br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overall, this allows
         viewers to 1) compare frequencies of how often women report their
@@ -1283,18 +1283,18 @@
       margin-right: 2px;
       border: none;
       clear: both;
-      /* border: 1px solid black; */
+      border: 1px solid black;
     }
 
     :root {
-      --phys-color: #ffbf52;
-      /* --phys-color: black; */
-      --sex-color: #d80c0c;
-      /* --sex-color: #7f7f7f; */
-      --emo-color: #1d1788;
-      /* --emo-color: #cccccc; */
-      --nothing-color: #bababa;
-      /* --nothing-color: white; */
+      /* --phys-color: #ffbf52; */
+      --phys-color: black;
+      /* --sex-color: #d80c0c; */
+      --sex-color: #7f7f7f;
+      /* --emo-color: #1d1788; */
+      --emo-color: #cccccc;
+      /* --nothing-color: #bababa; */
+      --nothing-color: white;
     }
 
     .phys {
@@ -1310,6 +1310,8 @@
     }
 
     .nothing {
+      background-color: #bababa;
+      background-color: white;
       background-color: var(--nothing-color);
     }
 
@@ -1381,7 +1383,7 @@
       margin-bottom: 5px;
       margin-right: 5px;
       clear: both;
-      /* border: 1px solid black; */
+      border: 1px solid black;
     }
 
     .legend h4 {
