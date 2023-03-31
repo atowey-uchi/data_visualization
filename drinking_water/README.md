@@ -2,7 +2,7 @@
 
 ## Visualization (PNG):
 
-<img width="210" alt="Screen Shot 2023-03-31 at 2 47 02 PM" src="https://user-images.githubusercontent.com/89881145/229215429-fa37b922-c4f8-4d0f-bf1c-d92c90d2e7d2.png">
+<img width="402" alt="Screen Shot 2023-03-31 at 2 47 02 PM" src="https://user-images.githubusercontent.com/89881145/229215429-fa37b922-c4f8-4d0f-bf1c-d92c90d2e7d2.png">
 
 <img width="402" alt="Screen Shot 2023-03-31 at 2 30 15 PM" src="https://user-images.githubusercontent.com/89881145/229212128-62e2bcf2-18ba-4299-8801-bfefe2c35c91.png">
 
