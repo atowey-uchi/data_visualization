@@ -1,5 +1,9 @@
 # Data Visualization Portfolio
 
+Allison M. Towey
+
+The University of Chicago
+
 ## Intimate Partner Violence and Alcohol Consumption in Ukraine
 https://atowey-uchi.github.io/data_visualization/ua-ipv/code%20%2B%20data/ua-ipv.html 
 
