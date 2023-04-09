@@ -45,6 +45,6 @@ https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20
 ### Data (CSV)
 https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv%20data.csv
 
-### Code to Create Visualization (HTML)
+### Code to Create Visualization (HTML/JS)
 https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv.html
 
