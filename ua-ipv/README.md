@@ -37,14 +37,14 @@ Confirming the strong relationship between frequent alcohol consumption and inti
 ### Replication Code
 
 #### STATA (exploratory)
-https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv.do
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv.do
 
 #### Python (full analysis and data collection)
-https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv.ipynb
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv.ipynb
 
 ### Data (CSV)
-https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv%20data.csv
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv%20data.csv
 
 ### Code to Create Visualization (HTML)
-https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/ua-ipv.html
+https://github.com/atowey-uchi/data_visualization/blob/main/ua-ipv/code%20%2B%20data/ua-ipv.html
 
