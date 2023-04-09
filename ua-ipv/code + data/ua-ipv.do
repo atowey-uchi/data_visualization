@@ -15,6 +15,7 @@ gen emo = d104 == 1
 // Grab sexual
 gen sexual = d108 == 1
 
+//Grab individuals only
 gen sexual_only = (emo == 0) & (sexual == 1) & (anyphys == 0)
 gen physical_only = (emo == 0) & (sexual == 0) & (anyphys == 1)
 gen emotional_only = (emo == 1) & (sexual == 0) & (anyphys == 0)
