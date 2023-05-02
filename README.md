@@ -3,10 +3,10 @@
 Allison M. Towey, *The University of Chicago*
 
 - [Literature Review]
-- [Intimate Partner Violence and Alcohol Consumption in Ukraine](https://atowey-uchi.github.io/data_visualization/ua-ipv/code%20%2B%20data/ua-ipv.html)
+- [Men’s Alcohol Consumption and Women’s Experiences of Intimate Partner Violence in Ukraine](https://atowey-uchi.github.io/data_visualization/ua-ipv/code%20%2B%20data/ua-ipv.html)
 - [Global Access to Safe Drinking Water](https://atowey-uchi.github.io/data_visualization/drinking_water/index.html)
-- [Changes in US Transportation Patterns After Covid](https://atowey-uchi.github.io/data_visualization/covid-transpo/code%20%2B%20data/index.html)
-- [Parents' Happiness During Covid](https://atowey-uchi.github.io/data_visualization/parent_happiness/README.md)
+- [Covid-19 and Transportation: How the Pandemic Affected Where We Went and How We Got There](https://atowey-uchi.github.io/data_visualization/covid-transpo/code%20%2B%20data/index.html)
+- [Average Reported Happiness by Race, Age, and Parental Status, 2018 and 2021](https://atowey-uchi.github.io/data_visualization/parent_happiness/README.md)
 
   In this portfolio, you will find a literature review and four data visualization projects that showcase the primary theoretical insights from the literature across a range of social science domains. The portfolio aims to demonstrate how the theoretical principles can be applied to real-world scenarios and how effective data visualization can enhance understanding and communication of complex information for different audiences.
 Creating effective visualizations requires an understanding of the subject matter, the audience, and the goals of the communication. In the social sciences, this means understanding the theories and concepts that underlie the data, as well as the specific audience that the visualization is intended to reach. By carefully considering these factors, data visualizations can be designed to convey key insights and facilitate understanding among different audiences, whether they are academics, policymakers, or the general public.
