@@ -2,7 +2,7 @@
 
 Allison M. Towey, *The University of Chicago*
 
-- [Literature Review]
+- [Literature Review](https://github.com/atowey-uchi/data_visualization/blob/4b34d741bec1483050b8938e5d0d82ab4e283b57/Principles%20of%20Data%20Visualization%20in%20the%20Social%20Sciences%20Literature%20Review.pdf)
 - [Men’s Alcohol Consumption and Women’s Experiences of Intimate Partner Violence in Ukraine](https://atowey-uchi.github.io/data_visualization/ua-ipv/code%20%2B%20data/ua-ipv.html)
 - [Global Access to Safe Drinking Water](https://atowey-uchi.github.io/data_visualization/drinking_water/index.html)
 - [Covid-19 and Transportation: How the Pandemic Affected Where We Went and How We Got There](https://atowey-uchi.github.io/data_visualization/covid-transpo/code%20%2B%20data/index.html)
