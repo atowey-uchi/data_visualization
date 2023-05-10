@@ -1,329 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>COVID-19 and Transportation</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   </head>
-   <style>
-      * { 
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Noto Sans', sans-serif;
-      }
-      html{
-      height: 100%;
-      }
-      body {
-      background-color: #FAF9F6;
-      min-height: 100vh;
-      margin: 0 auto;
-      animation: fadeInAnimation ease 5s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-      }
-      @keyframes fadeInAnimation {
-      0% {
-      opacity: 0;
-      }
-      100% {
-      opacity: 1;
-      }
-      }
-      h1 {
-      font-family: 'Merriweather', serif;
-      font-weight: 800;
-      font-size: 40px;
-      margin-bottom: 30px;
-      margin: 0 auto;
-      text-align: center;
-      max-width: 800px;
-      }
-      h4{
-      text-align: center;
-      font-weight: 300;
-      font-size: 20px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      margin-bottom: 40px;
-      }
-      h2{
-      font-family: 'Barlow Condensed', serif;
-      font-size: 30px;
-      font-weight: 600;
-      max-width: 700px;
-      margin: 0 auto;
-      margin-top: 40px;
-      }
-      #subtitle {
-      text-align: center;
-      color: #5e5e5e;
-      width: 40%;
-      }
-      #intro{
-      }
-      p{
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 16px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      }
-      #subheadline{
-      color: #5e5e5e;
-      font-size: 16px;
-      font-weight: normal;
-      margin-bottom: 40px;
-      }
-      #container {
-      max-width: 1040px;
-      margin: 0 auto;
-      }
-      a { 
-      color: #369;
-      }
-      .axis path,
-      .axis line {
-         fill: none;
-         stroke: #000;
-         shape-rendering: crispEdges;
-      }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 and Transportation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    }
+    html{
+    height: 100%;
+    }
+    body {
+    background-color: #FAF9F6;
+    min-height: 100vh;
+    margin: 0 auto;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+    h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    }
+    h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    }
+    h2{
+    font-family: 'Barlow Condensed', serif;
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+    #subtitle {
+    text-align: center;
+    color: #5e5e5e;
+    width: 40%;
+    }
+    #intro{
+    }
+    p{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+    #subheadline{
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    }
+    #container {
+    max-width: 1040px;
+    margin: 0 auto;
+    }
+    a {
+    color: #369;
+    }
+    .axis path,
+    .axis line {
+       fill: none;
+       stroke: #000;
+       shape-rendering: crispEdges;
+    }
 
-      .browser text {
-         text-align; left;
-         width: 400px;
-      }
-      svg {
-         width: 100%;
-      } 
-      svg.area {
-         width: 1000px;
-      }
-      text {
-      font-size: 10px;
-      text-transform: uppercase;
-      }
-      .y-axis path.domain { 
-      display: none; 
-      }
-      .y-axis line {
-      stroke: #5e5e5e37;
-      stroke-dasharray: 2px;
-      }
-      .country { 
-      cursor: default; 
-      }
-      .country path {
-      stroke-width: 1.5;
-      opacity: 0.75;
-      }
-      .highlight path {
-      stroke: steelblue;
-      opacity: 1;
-      }
-      .highlight text { 
-      fill: steelblue; 
-      }
-      div.red {
-      font-family: 'Barlow Condensed', sans-serif;
-      color: #003870;
-      margin: 0 auto;
-      margin-top: 0px;
-      font-size: 28px;
-      }
-      div.header {
-      width: 100vw;
-      margin: 0 auto;
-      margin-top: 60px;
-      }
-      .svg-tooltip {
-      background: rgba(69, 77, 93, .9);
-      border-radius: 5px;
-      color: #fff;
-      display: block;
-      font-size: 12px;
-      line-height: 12px;
-      text-transform: none;
-      max-width: 320px;
-      padding: .7rem;
-      position: absolute;
-      text-overflow: ellipsis;
-      white-space: pre;
-      z-index: 300;
-      visibility: hidden;
-      }
-      #legend {
-      margin-top: 20px
-      }
-      #legend svg {
-      margin: 0 auto;}
-      #maps {
-      display: flex;
-      margin: 0 auto;
-      padding-left: 5%;
-      padding-right: 5%;
-      max-width: 100%;
-      min-width: 100%;
-      }
-      .map-title{
-      text-align: center;
-      font-family: 'Noto Sans', sans-serif;
-      color: #5e5e5e;
-      font-size: 12px;
-      }
-      .map-wrap{
-      display: inline;
-      width: 25%;
-      }
-      .charts {
-      max-width: 800px;
-      margin: 0 auto;
-      }
-      .datasource {
-      color:rgba(69, 77, 93, .9);
-      margin: 0 auto;
-      text-align: center;
-      font-size: 10px;
-      }
-      .chart-title {
-      color:black;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 24px;
-      font-family: 'Merriweather', serif;
-      max-width: 800px;
-      margin-top: 30px;
-      }
-      .chart-subtitle {
-      color:rgba(69, 77, 93, .9);
-      margin: 0 auto;
-      text-align: center;
-      font-size: 16px;
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: 300;
-      }
-      hr {
-      margin-top: 100px;
-      }
-      .footer {
-      height: 100px;
-      }
-      ul {
-         max-width: 800px;
-         margin: 0 auto;
-         padding-left: 40px;
-      }
-      img{
-         max-width: 800px;
-         margin: 0 auto;
-         display: block;
-      }
-   </style>
-   <body>
-      <div class="header">
-         <h1>
-            <div class="red">COVID-19 AND TRANSPORTATION:</div>
-            How the Pandemic Affected Where We Went and How We Got There
-         </h1>
-         <p id="subtitle">A look into how the COVID-19 pandemic impacted—and, in some ways, still impacts—transportation and mobility patterns across the United States.</p>
-         <h4>BY ALLISON TOWEY <br> <i id="subheadline">The University of Chicago</i></h4>
-      </div>
-      <div id="maps">
-         <div class="map-wrap">
-            <div class="map" id="map1"></div>
-            <p class="map-title">February 2020</p>
-         </div>
-         <div class="map-wrap">
-            <div class="map"id="map2"></div>
-            <p class="map-title">March 2020</p>
-         </div>
-         <div class="map-wrap">
-            <div class="map"id="map3"></div>
-            <p class="map-title">April 2020</p>
-         </div>
-         <div class="map-wrap">
-            <div class="map"id="map4"></div>
-            <p class="map-title">May 2020</p>
-         </div>
-      </div>
-      <div id="legend"></div>
-      <p class="datasource">
-         Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
+    .browser text {
+       text-align; left;
+       width: 400px;
+    }
+    svg {
+       width: 100%;
+    }
+    svg.area {
+       width: 1000px;
+    }
+    text {
+    font-size: 10px;
+    text-transform: uppercase;
+    }
+    .y-axis path.domain {
+    display: none;
+    }
+    .y-axis line {
+    stroke: #5e5e5e37;
+    stroke-dasharray: 2px;
+    }
+    .country {
+    cursor: default;
+    }
+    .country path {
+    stroke-width: 1.5;
+    opacity: 0.75;
+    }
+    .highlight path {
+    stroke: steelblue;
+    opacity: 1;
+    }
+    .highlight text {
+    fill: steelblue;
+    }
+    div.red {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #003870;
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size: 28px;
+    }
+    div.header {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 60px;
+    }
+    .svg-tooltip {
+    background: rgba(69, 77, 93, .9);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: none;
+    max-width: 320px;
+    padding: .7rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre;
+    z-index: 300;
+    visibility: hidden;
+    }
+    #legend {
+    margin-top: 20px
+    }
+    #legend svg {
+    margin: 0 auto;}
+    #maps {
+    display: flex;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+    min-width: 100%;
+    }
+    .map-title{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #5e5e5e;
+    font-size: 12px;
+    }
+    .map-wrap{
+    display: inline;
+    width: 25%;
+    }
+    .charts {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    .datasource {
+    color:rgba(69, 77, 93, .9);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    }
+    .chart-title {
+    color:black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    max-width: 800px;
+    margin-top: 30px;
+    }
+    .chart-subtitle {
+    color:rgba(69, 77, 93, .9);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    }
+    hr {
+    margin-top: 100px;
+    }
+    .footer {
+    height: 100px;
+    }
+    ul {
+       max-width: 800px;
+       margin: 0 auto;
+       padding-left: 40px;
+    }
+    img{
+       max-width: 800px;
+       margin: 0 auto;
+       display: block;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>
+        <div class="red">COVID-19 AND TRANSPORTATION:</div>
+        How the Pandemic Affected Where We Went and How We Got There
+      </h1>
+      <p id="subtitle">
+        A look into how the COVID-19 pandemic impacted—and, in some ways, still
+        impacts—transportation and mobility patterns across the United States.
       </p>
-      <div id="container">
-         <p id="intro">Undoubtedly, the coronavirus pandemic has caused major, and at times lasting, effects on our lives. From how we work, to where we go to school, to how we shop, to how we socialize, our habits and routines have adapted to a new normal of increased remote access opportunities. The rise of telework, teleschool, online shopping, and video-chatting have decreased our need to leave our homes. In the immediate and uncertain days of the pandemic, these changes allowed for us to continue with our lives without in-person connection, slowing the transmission of the disease in the hopes of saving lives.
-
-          <br><br>With the worst days of the pandemic now (hopefully) in our rearview mirror, this “new normal” has had some lasting effects on our routines. In looking at American transportation patterns, we can see the effects of the pandemic on how often, how far, and with which transportation methods we travel, from the early days of the pandemic to now, nearly two years later.
-           </p>
-           <img src="img/nyc.jpeg">
-           <p class="datasource">
-            An empty scene in Times Square in New York City, April 2, 2020. Source: <a href="https://www.cnn.com/videos/us/2020/04/02/us-new-york-coronavirus-covid-19-pandemic-times-square-subway-quest-pkg-intl-ldn-vpx.cnn">CNN</a>
-         </p>
-        <h2>The pandemic’s effects on travel varied by location.</h2>
-         <p>As shown in the maps above, regional differences in the United States impact travel patterns. The Southeast, both before and during the early days of the pandemic, has a higher mobility rate, or more people, on average, leave their homes on a given day. 
-            <br><br> Across the country, however, travel decreased significantly in April as the pandemic spread through the country and lockdowns took effect. April had the lowest rate of people leaving their homes. Nationally, April 2, 2020 had a mobility rate of just over 63%. For context, the rate on April 2, 2019, just a year prior, was 89%. Such a change in the amount of travel in the United States likely has a variety of causes: school cancellations, telework opportunities, restaurant and bar closures, and more reduced the need for Americans to risk their health and leave home. </p>
-         <h3 class="chart-title">Percent Change in Mobility Rates By State</h3>
-         <h4 class="chart-subtitle">As a Percent of 2019 Mobility Data</h4>
-         <div class="charts" id="chart"></div>
-         <p class="datasource">
-            Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
-         </p>
-         <p>Interestingly, however, after the initial few months of the pandemic, the second half of 2020 and beginning of 2021 saw a resurgence of people traveling outside of the home. In fact, the spring and summer months of 2021 had a higher rate of travel year-over-year, showing a return, at least in part, to travel. Each state had a different path of mobility patterns through the pandemic, which different state laws permitting varying levels of travel. To explore these trends, hover over various states above.</p>
-         <p>
-            The pandemic not only affected if people would leave their homes, but also how far they traveled; in fact, local travel of less than 1 mile, was only somewhat decreased during the pandemic. Further travel was more severely impacted by the pandemic. Flight and travel cancellations undoubtedly had a role in the lower number of long trips taken. In 2020, over 4,000 flights, constituting over 1% of total flights, were cancelled entirely, with another 6% rescheduled to a later time. (<a href="https://www.transportation.gov/briefing-room/air-travel-consumer-report-december-2020-full-year-2020-numbers">Source: The Federal Aviation Administration</a>)
-         </p>
-         <h3 class="chart-title">National Number of Trips Taken By Distance From Home</h3>
-         <h4 class="chart-subtitle">Daily Data (in miles)</h4>
-         <div class="charts" id="chart3"></div>
-         <p class="datasource">
-            Data from the US Department of Transportation's <a href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv">Daily Trips By Distance</a> dataset.
-         </p>
-         <p>
-            While travel, both near and far, has rebounded since the early days of the pandemic in 2020, travel is still below its 2019 numbers. Though we are only a couple years removed, it appears that there has been a longer-term effect of the pandemic on our travel patterns, even as lockdowns, flight cancellations, and public health concerns have subsided.
-         </p>
-         <img src="img/bus.jpeg">
-           <p class="datasource">
-            Bus drivers in masks in Chicago, IL, April 2020. Source: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Factivetrans.org%2Fblog%2Fmobility-challenges-in-the-time-of-covid-19-on-chicagos-south-side&psig=AOvVaw3CVuNKM9yhIJvs1so8VKay&ust=1670370700754000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCMiCsPTV4_sCFQAAAAAdAAAAABAE">Active Transportation Alliance</a>
-         </p>
-         <h2>While car traffic has resumed, public transportation and aviation remain below their 2019 ridership numbers.</h2>
-         <p>
-            Every day, millions of commuters in the U.S. continue to rely on public forms of transportation, whether that is buses, rail, or aviation. Along with the decreased need to travel due to telework, teleschool, and other remote opportunities on the rise, the COVID-19 pandemic also forced riders to contend with social distancing and other safety measures. To adapt to the spread of the airborne virus, transportation agencies in major cities had to quickly change how they offered services. On planes, buses, and rail lines, social distancing measures, masking requirements, and decreased vehicles in service greatly impacted transportation as we know it.
-            <br><br> In fact to this day, bus, rail, and aviation ridership numbers remain below their 2019 rates, with buses racing the most significant decrease in ridership. The only form of transportation near its initial rate (denoted by miles traveled nationally) is automobile traffic. As car usage has rebounded, other, public forms of transportation have failed to recover quickly. It is unknown if such travel will return. As more remote socialization and working options arise, perhaps public transportation's levels will remain at their decreased clip, though only time can tell.
-         </p>
-         <h3 class="chart-title">Percent Change in Mobility Rates By Transportation Type</h3>
-         <h4 class="chart-subtitle">As a Percent of 2019 Transportation Ridership Data</h4>
-         <div class="charts" id="chart2"></div>
-         <p class="datasource">
-            Data from the US Department of Transportation's "Week in Transportation" <a href="https://www.bts.gov/covid-19/week-in-transportation">Passenger Modes Percent Change from Baseline</a> data.
-         </p>
-         <p>
-            While some pandemic-related changes to our transportation and travel have subsided, longer-term effects, such as decreased public transportation ridership, remain. In our new world of telework and video-conferencing with loved ones, where we go and how we get there remain an evolving process.
-         </p>
-
-         <hr />
+      <h4>
+        BY ALLISON TOWEY <br />
+        <i id="subheadline">The University of Chicago</i>
+      </h4>
+    </div>
+    <div id="maps">
+      <div class="map-wrap">
+        <div class="map" id="map1"></div>
+        <p class="map-title">February 2020</p>
       </div>
-      <div class="footer"></div>
-   </body>
-   <script src="https://d3js.org/d3-collection.v1.min.js"></script>
-   <script src="https://d3js.org/d3.v7.min.js"></script>
-   <script src="d3.v3.js"></script>
-   <script src="libs/d3-color-legend.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
-   <script src="chart1.js"></script>
-   <script src="chart2.js"></script>
-   <script src="map.js"></script>
-   <script src="map2.js"></script>
-   <script src="map3.js"></script>
-   <script src="map4.js"></script>
-   <script src="chart3.js"></script>
-</html>
+      <div class="map-wrap">
+        <div class="map" id="map2"></div>
+        <p class="map-title">March 2020</p>
+      </div>
+      <div class="map-wrap">
+        <div class="map" id="map3"></div>
+        <p class="map-title">April 2020</p>
+      </div>
+      <div class="map-wrap">
+        <div class="map" id="map4"></div>
+        <p class="map-title">May 2020</p>
+      </div>
+    </div>
+    <div id="legend"></div>
+    <p class="datasource">
+      Data from the US Department of Transportation's
+      <a
+        href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv"
+        >Daily Trips By Distance</a
+      >
+      dataset.
+    </p>
+    <div id="container">
+      <p id="intro">
+        Undoubtedly, the coronavirus pandemic has caused major, and at times
+        lasting, effects on our lives. From how we work, to where we go to
+        school, to how we shop, to how we socialize, our habits and routines
+        have adapted to a new normal of increased remote access opportunities.
+        The rise of telework, teleschool, online shopping, and video-chatting
+        have decreased our need to leave our homes. In the immediate and
+        uncertain days of the pandemic, these changes allowed for us to continue
+        with our lives without in-person connection, slowing the transmission of
+        the disease in the hopes of saving lives.
 
+        <br /><br />With the worst days of the pandemic now (hopefully) in our
+        rearview mirror, this “new normal” has had some lasting effects on our
+        routines. In looking at American transportation patterns, we can see the
+        effects of the pandemic on how often, how far, and with which
+        transportation methods we travel, from the early days of the pandemic to
+        now, nearly two years later.
+      </p>
+      <img src="img/nyc.jpeg" />
+      <p class="datasource">
+        An empty scene in Times Square in New York City, April 2, 2020. Source:
+        <a
+          href="https://www.cnn.com/videos/us/2020/04/02/us-new-york-coronavirus-covid-19-pandemic-times-square-subway-quest-pkg-intl-ldn-vpx.cnn"
+          >CNN</a
+        >
+      </p>
+      <h2>The pandemic’s effects on travel varied by location.</h2>
+      <p>
+        As shown in the maps above, regional differences in the United States
+        impact travel patterns. The Southeast, both before and during the early
+        days of the pandemic, has a higher mobility rate, or more people, on
+        average, leave their homes on a given day. <br /><br />
+        Across the country, however, travel decreased significantly in April as
+        the pandemic spread through the country and lockdowns took effect. April
+        had the lowest rate of people leaving their homes. Nationally, April 2,
+        2020 had a mobility rate of just over 63%. For context, the rate on
+        April 2, 2019, just a year prior, was 89%. Such a change in the amount
+        of travel in the United States likely has a variety of causes: school
+        cancellations, telework opportunities, restaurant and bar closures, and
+        more reduced the need for Americans to risk their health and leave home.
+      </p>
+      <h3 class="chart-title">Percent Change in Mobility Rates By State</h3>
+      <h4 class="chart-subtitle">As a Percent of 2019 Mobility Data</h4>
+      <div class="charts" id="chart"></div>
+      <p class="datasource">
+        Data from the US Department of Transportation's
+        <a
+          href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv"
+          >Daily Trips By Distance</a
+        >
+        dataset.
+      </p>
+      <p>
+        Interestingly, however, after the initial few months of the pandemic,
+        the second half of 2020 and beginning of 2021 saw a resurgence of people
+        traveling outside of the home. In fact, the spring and summer months of
+        2021 had a higher rate of travel year-over-year, showing a return, at
+        least in part, to travel. Each state had a different path of mobility
+        patterns through the pandemic, which different state laws permitting
+        varying levels of travel. To explore these trends, hover over various
+        states above.
+      </p>
+      <p>
+        The pandemic not only affected if people would leave their homes, but
+        also how far they traveled; in fact, local travel of less than 1 mile,
+        was only somewhat decreased during the pandemic. Further travel was more
+        severely impacted by the pandemic. Flight and travel cancellations
+        undoubtedly had a role in the lower number of long trips taken. In 2020,
+        over 4,000 flights, constituting over 1% of total flights, were
+        cancelled entirely, with another 6% rescheduled to a later time. (<a
+          href="https://www.transportation.gov/briefing-room/air-travel-consumer-report-december-2020-full-year-2020-numbers"
+          >Source: The Federal Aviation Administration</a
+        >)
+      </p>
+      <h3 class="chart-title">
+        National Number of Trips Taken By Distance From Home
+      </h3>
+      <h4 class="chart-subtitle">Daily Data (in miles)</h4>
+      <div class="charts" id="chart3"></div>
+      <svg>
+        <defs>
+          <pattern
+            id="pattern-0"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M0 0L8 8" stroke="#9ecae1" stroke-width="2" />
+          </pattern>
+          <pattern
+            id="pattern-1"
+            width="6"
+            height="6"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="6" height="6" fill="#4292c6" />
+            <path d="M0 0L6 6" stroke="#2171b5" stroke-width="2" />
+          </pattern>
+          <pattern
+            id="pattern-3"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="8" height="8" fill="#08306b" />
+          </pattern>
+
+          <pattern
+            id="pattern-2"
+            patternUnits="userSpaceOnUse"
+            width="8"
+            height="8"
+          >
+            <line
+              x1="0"
+              y1="0"
+              x2="8"
+              y2="8"
+              style="stroke: #609bc8; stroke-width: 4"
+            />
+            <line
+              x1="8"
+              y1="0"
+              x2="0"
+              y2="8"
+              style="stroke: #609bc8; stroke-width: 4"
+            />
+          </pattern>
+        </defs>
+      </svg>
+
+      <p class="datasource">
+        Data from the US Department of Transportation's
+        <a
+          href="https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv"
+          >Daily Trips By Distance</a
+        >
+        dataset.
+      </p>
+      <p>
+        While travel, both near and far, has rebounded since the early days of
+        the pandemic in 2020, travel is still below its 2019 numbers. Though we
+        are only a couple years removed, it appears that there has been a
+        longer-term effect of the pandemic on our travel patterns, even as
+        lockdowns, flight cancellations, and public health concerns have
+        subsided.
+      </p>
+      <img src="img/bus.jpeg" />
+      <p class="datasource">
+        Bus drivers in masks in Chicago, IL, April 2020. Source:
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Factivetrans.org%2Fblog%2Fmobility-challenges-in-the-time-of-covid-19-on-chicagos-south-side&psig=AOvVaw3CVuNKM9yhIJvs1so8VKay&ust=1670370700754000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCMiCsPTV4_sCFQAAAAAdAAAAABAE"
+          >Active Transportation Alliance</a
+        >
+      </p>
+      <h2>
+        While car traffic has resumed, public transportation and aviation remain
+        below their 2019 ridership numbers.
+      </h2>
+      <p>
+        Every day, millions of commuters in the U.S. continue to rely on public
+        forms of transportation, whether that is buses, rail, or aviation. Along
+        with the decreased need to travel due to telework, teleschool, and other
+        remote opportunities on the rise, the COVID-19 pandemic also forced
+        riders to contend with social distancing and other safety measures. To
+        adapt to the spread of the airborne virus, transportation agencies in
+        major cities had to quickly change how they offered services. On planes,
+        buses, and rail lines, social distancing measures, masking requirements,
+        and decreased vehicles in service greatly impacted transportation as we
+        know it.
+        <br /><br />
+        In fact to this day, bus, rail, and aviation ridership numbers remain
+        below their 2019 rates, with buses racing the most significant decrease
+        in ridership. The only form of transportation near its initial rate
+        (denoted by miles traveled nationally) is automobile traffic. As car
+        usage has rebounded, other, public forms of transportation have failed
+        to recover quickly. It is unknown if such travel will return. As more
+        remote socialization and working options arise, perhaps public
+        transportation's levels will remain at their decreased clip, though only
+        time can tell.
+      </p>
+      <h3 class="chart-title">
+        Percent Change in Mobility Rates By Transportation Type
+      </h3>
+      <h4 class="chart-subtitle">
+        As a Percent of 2019 Transportation Ridership Data
+      </h4>
+      <div class="charts" id="chart2"></div>
+      <p class="datasource">
+        Data from the US Department of Transportation's "Week in Transportation"
+        <a href="https://www.bts.gov/covid-19/week-in-transportation"
+          >Passenger Modes Percent Change from Baseline</a
+        >
+        data.
+      </p>
+      <p>
+        While some pandemic-related changes to our transportation and travel
+        have subsided, longer-term effects, such as decreased public
+        transportation ridership, remain. In our new world of telework and
+        video-conferencing with loved ones, where we go and how we get there
+        remain an evolving process.
+      </p>
+
+      <hr />
+    </div>
+    <div class="footer"></div>
+  </body>
+  <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="d3.v3.js"></script>
+  <script src="libs/d3-color-legend.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script src="chart1.js"></script>
+  <script src="chart2.js"></script>
+  <script src="map.js"></script>
+  <script src="map2.js"></script>
+  <script src="map3.js"></script>
+  <script src="map4.js"></script>
+  <script src="chart3.js"></script>
+</html>
