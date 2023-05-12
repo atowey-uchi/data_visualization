@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>D3 Line Chart with Tooltip</title>
+    <style>
+      .line {
+        fill: none;
+        stroke-width: 2px;
+      }
+      .tooltip {
+        position: absolute;
+        pointer-events: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 6px;
+        font-size: 12px;
+      }
+
+      .vertical-line {
+        stroke: #aaa;
+        stroke-dasharray: 3 3;
+      }
+    </style>
+  </head>
+  <body>
+    <svg id="chart"></svg>
+    <div class="tooltip"></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+      d3.csv("data/types.csv").then((data) => {
+        const parseDate = d3.timeParse("%d-%b-%y");
+        const formatDate = d3.timeFormat("%b %d, %Y");
+
+        data.forEach((d) => {
+          d.Date = parseDate(d.Date);
+        });
+
+        // process data to map dates to corresponding data values
+        let valuesByX = {};
+        data.forEach((d) => {
+          const formattedDate = formatDate(d.Date);
+          if (!(formattedDate in valuesByX)) {
+            valuesByX[formattedDate] = {};
+          }
+          valuesByX[formattedDate][d.Location] = d.Value;
+        });
+
+        const width = 800;
+        const height = 400;
+        const margin = { top: 20, right: 20, bottom: 40, left: 40 };
+        const innerWidth = width - margin.left - margin.right;
+        const innerHeight = height - margin.top - margin.bottom;
+
+        const xScale = d3
+          .scaleTime()
+          .domain(d3.extent(data, (d) => d.Date))
+          .range([0, innerWidth]);
+
+        const yScale = d3
+          .scaleLinear()
+          .domain([-1, 1]) // Adjust the domain based on your data
+          .range([innerHeight, 0]);
+
+        const lineGenerator = d3
+          .line()
+          .x((d) => xScale(d.Date))
+          .y((d) => yScale(d.Value));
+
+        const svg = d3
+          .select("#chart")
+          .attr("width", width)
+          .attr("height", height);
+
+        const chart = svg
+          .append("g")
+          .attr("transform", `translate(${margin.left},${margin.top})`);
+        const verticalLine = chart
+          .append("line")
+          .attr("class", "vertical-line")
+          .attr("y1", 0)
+          .attr("y2", height)
+          .style("display", "none");
+        chart
+          .append("g")
+          .attr("class", "x-axis")
+          .attr("transform", `translate(0,${innerHeight})`)
+          .call(d3.axisBottom(xScale).tickFormat(formatDate));
+
+        chart.append("g").attr("class", "y-axis").call(d3.axisLeft(yScale));
+
+        const seriesNames = [...new Set(data.map((d) => d.Location))];
+
+        seriesNames.forEach((name) => {
+          const seriesData = data.filter((d) => d.Location === name);
+
+          chart
+            .append("path")
+            .datum(seriesData)
+            .attr("class", "line")
+            .attr("d", lineGenerator)
+            .attr("stroke", getColor(name))
+            .attr("data-name", name)
+            .attr("data-value", seriesData[seriesData.length - 1].Value);
+        });
+
+        const tooltip = d3.select(".tooltip");
+
+        const formatDate2 = d3.timeFormat("%b %d, %Y");
+
+        // Create a transparent overlay rectangle to capture mouse events
+        const overlay = chart
+          .append("rect")
+          .attr("class", "overlay")
+          .attr("x", 0)
+          .attr("y", 0)
+          .attr("width", innerWidth)
+          .attr("height", height)
+          .style("fill", "none")
+          .style("pointer-events", "all")
+          .on("mousemove", showTooltip)
+          .on("mouseleave", hideTooltip);
+
+        function showTooltip(event) {
+          const xPosition = d3.pointer(event)[0];
+          const xValue = xScale.invert(xPosition);
+
+          tooltip
+            .style("display", "block")
+            .style("left", `${event.pageX}px`)
+            .style("top", `${event.pageY}px`);
+
+          const bisectDate = d3.bisector((d) => d.Date).left;
+          const bisectIndex = bisectDate(data, xValue, 1);
+          const previousData = data[bisectIndex - 1];
+          const currentData = data[bisectIndex];
+          const closestData =
+            currentData &&
+            xValue - previousData.Date < currentData.Date - xValue
+              ? previousData
+              : currentData;
+
+          const tooltipContent = seriesNames
+            .map((name) => {
+              return `${name}: ${
+                valuesByX[formatDate(closestData.Date)][name] ?? "N/A"
+              }`;
+            })
+            .filter((content) => content !== "");
+
+          tooltip.html(
+            `${formatDate2(xValue)}<br/>${tooltipContent.join("<br/>")}`
+          );
+
+          verticalLine
+            .style("display", "block")
+            .attr("x1", xPosition)
+            .attr("x2", xPosition);
+        }
+
+        function hideTooltip() {
+          tooltip.style("display", "none");
+          verticalLine.style("display", "none");
+        }
+
+        function getColor(name) {
+          // Define the color scheme for different series
+          const colorScheme = d3.scaleOrdinal(d3.schemeCategory10);
+
+          // Return the color based on the name/location
+          return colorScheme(name);
+        }
+      });
+    </script>
+  </body>
+</html>

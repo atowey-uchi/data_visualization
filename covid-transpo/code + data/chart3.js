@@ -3,6 +3,7 @@ var margin_area = { top: 40, right: 0, bottom: 30, left: 30 },
   height_area = 500 - margin_area.top - margin_area.bottom;
 
 var parseDate = d3v3.time.format("%Y/%m/%d").parse;
+let formatDate = d3v3.time.format("%b %d, %Y");
 
 var x = d3v3.time.scale().range([0, width_area]);
 
@@ -57,6 +58,75 @@ var svg_area = d3v3
     "translate(" + margin_area.left + "," + margin_area.top + ")"
   );
 
+// add pattern defs
+const defs = svg_area.append("defs");
+
+defs
+  .append("pattern")
+  .attr("id", "pattern-0")
+  .attr("width", "8")
+  .attr("height", "8")
+  .attr("patternUnits", "userSpaceOnUse")
+  .append("path")
+  .attr("d", "M0 0L8 8")
+  .attr("stroke", "#9ecae1")
+  .attr("stroke-width", "2");
+
+const pattern1 = defs
+  .append("pattern")
+  .attr("id", "pattern-1")
+  .attr("width", "6")
+  .attr("height", "6")
+  .attr("patternUnits", "userSpaceOnUse");
+
+pattern1
+  .append("path")
+  .attr("d", "M0 0L8 8")
+  .attr("stroke", "#9ecae1")
+  .attr("stroke-width", "2");
+
+pattern1
+  .append("rect")
+  .attr("width", "6")
+  .attr("height", "6")
+  .attr("fill", "#4292c6");
+
+const pattern2 = defs
+  .append("pattern")
+  .attr("id", "pattern-2")
+  .attr("width", "8")
+  .attr("height", "8")
+  .attr("patternUnits", "userSpaceOnUse");
+
+pattern2
+  .append("line")
+  .attr("x1", "0")
+  .attr("y1", "0")
+  .attr("x2", "8")
+  .attr("y2", "8")
+  .attr("stroke", "#609bc8")
+  .attr("stroke-width", "4");
+
+pattern2
+  .append("line")
+  .attr("x1", "8")
+  .attr("y1", "0")
+  .attr("x2", "0")
+  .attr("y2", "8")
+  .attr("stroke", "#609bc8")
+  .attr("stroke-width", "4");
+
+defs
+  .append("pattern")
+  .attr("id", "pattern-3")
+  .attr("width", "8")
+  .attr("height", "8")
+  .attr("patternUnits", "userSpaceOnUse")
+  .append("rect")
+  .attr("width", "8")
+  .attr("height", "8")
+  .attr("fill", "#08306b");
+
 d3v3.csv("data/new_distance.csv", function (error, data) {
   color.domain(
     d3v3.keys(data[0]).filter(function (key) {
@@ -65,6 +135,12 @@ d3v3.csv("data/new_distance.csv", function (error, data) {
   );
   data.forEach(function (d) {
     d.date = parseDate(d.date);
+  });
+
+  // group values for each date
+  const valuesByDate = {};
+  data.forEach((d) => {
+    valuesByDate[d.date] = d;
   });
 
   var browsers = stack(
@@ -152,4 +228,82 @@ d3v3.csv("data/new_distance.csv", function (error, data) {
     .call(xAxis);
 
   svg_area.append("g").attr("class", "y axis").call(yAxis);
+
+  // Tooltip interactions
+
+  const hoverLine = svg_area
+    .append("line")
+    .attr("stroke", "#555")
+    .attr("stroke-width", 1)
+    .attr("opacity", "0")
+    .attr("stroke-dasharray", "3 3")
+    .attr("y1", 0)
+    .attr("y2", height_area);
+
+  const tooltip = d3.select("#tooltip");
+
+  const tooltipText = tooltip.append("text");
+  const interactionsOverlay = svg_area
+    .append("rect")
+    .attr("pointer-events", "all")
+    .attr("fill", "none")
+    .attr("width", width_area)
+    .attr("height", height_area)
+    .on("mousemove", mousemove)
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+
+  function mousemove() {
+    const event = d3v3.event;
+    const mouse = d3v3.mouse(this);
+    const xValue = x.invert(mouse[0]);
+
+    tooltip
+      .style("display", "block")
+      .style("left", `${event.pageX}px`)
+      .style("top", `${event.pageY}px`);
+
+    const bisectDate = d3v3.bisector((d) => d.date).left;
+    const bisectIndex = bisectDate(data, xValue, 1);
+    const previousData = data[bisectIndex - 1];
+    const currentData = data[bisectIndex];
+    const closestData =
+      currentData && xValue - previousData.Date < currentData.Date - xValue
+        ? previousData
+        : currentData;
+
+    const keys = Object.keys(closestData)
+      .filter((key) => key !== "date")
+      .reverse();
+    const tooltipContent = [];
+    keys.forEach((key) => {
+      const formattedValue = formatValue(closestData[key]).replace("G", "B");
+      tooltipContent.push({
+        key,
+        value: formattedValue,
+        color: color(key),
+      });
+    });
+
+    const tooltipHtml = generateTooltip(
+      formatDate((closestData ?? {}).date),
+      tooltipContent
+    );
+    tooltip.html(tooltipHtml);
+
+    hoverLine
+      .style("display", "block")
+      .attr("x1", mouse[0])
+      .attr("x2", mouse[0]);
+  }
+
+  function mouseover() {
+    hoverLine.attr("opacity", "1");
+    tooltip.style("display", null);
+  }
+
+  function mouseout() {
+    hoverLine.attr("opacity", "0");
+    tooltip.style("display", "none");
+  }
 });

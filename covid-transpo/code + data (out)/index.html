@@ -21,233 +21,238 @@
     />
   </head>
   <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
-    }
-    html{
-    height: 100%;
-    }
-    body {
-    background-color: #FAF9F6;
-    min-height: 100vh;
-    margin: 0 auto;
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    }
-    @keyframes fadeInAnimation {
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-    }
-    h1 {
-    font-family: 'Merriweather', serif;
-    font-weight: 800;
-    font-size: 40px;
-    margin-bottom: 30px;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 800px;
-    }
-    h4{
-    text-align: center;
-    font-weight: 300;
-    font-size: 20px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    margin-bottom: 40px;
-    }
-    h2{
-    font-family: 'Barlow Condensed', serif;
-    font-size: 30px;
-    font-weight: 600;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 40px;
-    }
-    #subtitle {
-    text-align: center;
-    color: #5e5e5e;
-    width: 40%;
-    }
-    #intro{
-    }
-    p{
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    }
-    #subheadline{
-    color: #5e5e5e;
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 40px;
-    }
-    #container {
-    max-width: 1040px;
-    margin: 0 auto;
-    }
-    a {
-    color: #369;
-    }
-    .axis path,
-    .axis line {
-       fill: none;
-       stroke: #000;
-       shape-rendering: crispEdges;
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+            }
+            html{
+            height: 100%;
+            }
+            body {
+            background-color: #FAF9F6;
+            min-height: 100vh;
+            margin: 0 auto;
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            }
+            @keyframes fadeInAnimation {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+            }
+            h1 {
+            font-family: 'Merriweather', serif;
+            font-weight: 800;
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 800px;
+            }
+            h4{
+            text-align: center;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            margin-bottom: 40px;
+            }
+            h2{
+            font-family: 'Barlow Condensed', serif;
+            font-size: 30px;
+            font-weight: 600;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-top: 40px;
+            }
+            #subtitle {
+            text-align: center;
+            color: #5e5e5e;
+            width: 40%;
+            }
+            #intro{
+            }
+            p{
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 16px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            }
+            #subheadline{
+            color: #5e5e5e;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            }
+            #container {
+            max-width: 1040px;
+            margin: 0 auto;
+            }
+            a {
+            color: #369;
+            }
+            .axis path,
+            .axis line {
+               fill: none;
+               stroke: #000;
+               shape-rendering: crispEdges;
+            }
+
+            .browser text {
+               text-align; left;
+               width: 400px;
+            }
+
+            .tooltip {
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          padding: 5px;
+          font-size: 12px;
+        }
+
+
+            svg {
+               width: 100%;
+            }
+            svg.area {
+               width: 1000px;
+            }
+            text {
+            font-size: 10px;
+            text-transform: uppercase;
+            }
+            .y-axis path.domain {
+            display: none;
+            }
+            .y-axis line {
+            stroke: #5e5e5e37;
+            stroke-dasharray: 2px;
+            }
+            .country {
+            cursor: default;
+            }
+            .country path {
+            stroke-width: 1.5;
+            opacity: 0.75;
+            }
+            .highlight path {
+            stroke: steelblue;
+            opacity: 1;
+            }
+            .highlight text {
+            fill: steelblue;
+            }
+            div.red {
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #003870;
+            margin: 0 auto;
+            margin-top: 0px;
+            font-size: 28px;
+            }
+            div.header {
+            width: 100vw;
+            margin: 0 auto;
+            margin-top: 60px;
+            }
+            .vertical-line {
+      stroke: #ccc;
+      stroke-width: 1px;
+      stroke-dasharray: 5, 5;
     }
 
-    .browser text {
-       text-align; left;
-       width: 400px;
-    }
-    svg {
-       width: 100%;
-    }
-    svg.area {
-       width: 1000px;
-    }
-    text {
-    font-size: 10px;
-    text-transform: uppercase;
-    }
-    .y-axis path.domain {
-    display: none;
-    }
-    .y-axis line {
-    stroke: #5e5e5e37;
-    stroke-dasharray: 2px;
-    }
-    .country {
-    cursor: default;
-    }
-    .country path {
-    stroke-width: 1.5;
-    opacity: 0.75;
-    }
-    .highlight path {
-    stroke: steelblue;
-    opacity: 1;
-    }
-    .highlight text {
-    fill: steelblue;
-    }
-    div.red {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: #003870;
-    margin: 0 auto;
-    margin-top: 0px;
-    font-size: 28px;
-    }
-    div.header {
-    width: 100vw;
-    margin: 0 auto;
-    margin-top: 60px;
-    }
-    .svg-tooltip {
-    background: rgba(69, 77, 93, .9);
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    line-height: 12px;
-    text-transform: none;
-    max-width: 320px;
-    padding: .7rem;
-    position: absolute;
-    text-overflow: ellipsis;
-    white-space: pre;
-    z-index: 300;
-    visibility: hidden;
-    }
-    #legend {
-    margin-top: 20px
-    }
-    #legend svg {
-    margin: 0 auto;}
-    #maps {
-    display: flex;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 100%;
-    min-width: 100%;
-    }
-    .map-title{
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    color: #5e5e5e;
-    font-size: 12px;
-    }
-    .map-wrap{
-    display: inline;
-    width: 25%;
-    }
-    .charts {
-    max-width: 800px;
-    margin: 0 auto;
-    }
-    .datasource {
-    color:rgba(69, 77, 93, .9);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 10px;
-    }
-    .chart-title {
-    color:black;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Merriweather', serif;
-    max-width: 800px;
-    margin-top: 30px;
-    }
-    .chart-subtitle {
-    color:rgba(69, 77, 93, .9);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    }
-    .dropdown {
-      text-align: center;
-    }
-    hr {
-    margin-top: 100px;
-    }
-    .footer {
-    height: 100px;
-    }
-    ul {
-       max-width: 800px;
-       margin: 0 auto;
-       padding-left: 40px;
-    }
-    img{
-       max-width: 800px;
-       margin: 0 auto;
-       display: block;
-    }
-    #tooltip {
-      position: absolute;
-      pointer-events: none;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 6px;
-      font-size: 12px;
-      display: none;
-    }
+            .svg-tooltip {
+            background: rgba(69, 77, 93, .9);
+            border-radius: 5px;
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: none;
+            max-width: 320px;
+            padding: .7rem;
+            position: absolute;
+            text-overflow: ellipsis;
+            white-space: pre;
+            z-index: 300;
+            visibility: hidden;
+            }
+            #legend {
+            margin-top: 20px
+            }
+            #legend svg {
+            margin: 0 auto;}
+            #maps {
+            display: flex;
+            margin: 0 auto;
+            padding-left: 5%;
+            padding-right: 5%;
+            max-width: 100%;
+            min-width: 100%;
+            }
+            .map-title{
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            color: #5e5e5e;
+            font-size: 12px;
+            }
+            .map-wrap{
+            display: inline;
+            width: 25%;
+            }
+            .charts {
+            max-width: 800px;
+            margin: 0 auto;
+            }
+            .datasource {
+            color:rgba(69, 77, 93, .9);
+            margin: 0 auto;
+            text-align: center;
+            font-size: 10px;
+            }
+            .chart-title {
+            color:black;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Merriweather', serif;
+            max-width: 800px;
+            margin-top: 30px;
+            }
+            .chart-subtitle {
+            color:rgba(69, 77, 93, .9);
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 300;
+            }
+            hr {
+            margin-top: 100px;
+            }
+            .footer {
+            height: 100px;
+            }
+            ul {
+               max-width: 800px;
+               margin: 0 auto;
+               padding-left: 40px;
+            }
+            img{
+               max-width: 800px;
+               margin: 0 auto;
+               display: block;
+            }
   </style>
   <body>
     <div class="header">
@@ -336,9 +341,13 @@
       <h3 class="chart-title">Percent Change in Mobility Rates By State</h3>
       <h4 class="chart-subtitle">As a Percent of 2019 Mobility Data</h4>
       <div class="dropdown">
-        Selected state:
-        <select id="state-select"></select>
+        <select id="country-select">
+          <option value="DC">DC</option>
+          <option value="MD">MD</option>
+          <option value="VA">VA</option>
+        </select>
       </div>
+
       <div class="charts" id="chart"></div>
       <p class="datasource">
         Data from the US Department of Transportation's
@@ -375,6 +384,57 @@
       </h3>
       <h4 class="chart-subtitle">Daily Data (in miles)</h4>
       <div class="charts" id="chart3"></div>
+      <svg>
+        <defs>
+          <pattern
+            id="pattern-0"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M0 0L8 8" stroke="#9ecae1" stroke-width="2" />
+          </pattern>
+          <pattern
+            id="pattern-1"
+            width="6"
+            height="6"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="6" height="6" fill="#4292c6" />
+            <path d="M0 0L6 6" stroke="#2171b5" stroke-width="2" />
+          </pattern>
+          <pattern
+            id="pattern-3"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="8" height="8" fill="#08306b" />
+          </pattern>
+
+          <pattern
+            id="pattern-2"
+            patternUnits="userSpaceOnUse"
+            width="8"
+            height="8"
+          >
+            <line
+              x1="0"
+              y1="0"
+              x2="8"
+              y2="8"
+              style="stroke: #609bc8; stroke-width: 4"
+            />
+            <line
+              x1="8"
+              y1="0"
+              x2="0"
+              y2="8"
+              style="stroke: #609bc8; stroke-width: 4"
+            />
+          </pattern>
+        </defs>
+      </svg>
 
       <p class="datasource">
         Data from the US Department of Transportation's
@@ -451,14 +511,12 @@
       <hr />
     </div>
     <div class="footer"></div>
-    <div id="tooltip"></div>
   </body>
   <script src="https://d3js.org/d3-collection.v1.min.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="d3.v3.js"></script>
   <script src="libs/d3-color-legend.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
-  <script src="tooltip.js"></script>
   <script src="chart1.js"></script>
   <script src="chart2.js"></script>
   <script src="map.js"></script>
